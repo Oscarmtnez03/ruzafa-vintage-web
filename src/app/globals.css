@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta Cromática Oficial: "Galería Mid-Century & Goma-Laca Valenciana" */
+  --bg-alabaster: #faf7f2;       /* Estuco luminoso de galería / Algodón crudo */
+  --bg-travertine: #f1ece1;      /* Piedra Bateig suave / Lino valenciano */
+  --bg-walnut: #14100e;          /* Nogal negro tostado / Bronce fundido */
+  --bg-walnut-elevated: #211a16; /* Caoba oscura de taller */
+  --ink-primary: #1a1412;        /* Ébano y nogal profundo */
+  --ink-secondary: #5c5149;      /* Sombra tostada / Tierra umber */
+  --ink-muted: #84776d;          /* Gris cálido de taller */
+  --teak-primary: #a65e2e;       /* Ámbar Goma-Laca & Teca Birmana */
+  --teak-hover: #8a4b20;         /* Teca envejecida intensa */
+  --brass-luminous: #d4a359;     /* Latón bruñido y reflejo de cristal */
+  --brass-tint: #f6ecdc;         /* Luz cálida de vela sobre cristal */
+  --gallery-green: #2a3c34;      /* Verde Galería Mid-Century 1960 / Pátina */
+  --gallery-green-tint: #e6ece8; /* Salvia mineral suave */
+  --border-hairline: rgba(26, 20, 18, 0.09);
+}
+
+@theme inline {
+  --color-background: var(--bg-alabaster);
+  --color-foreground: var(--ink-primary);
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-alabaster);
+  color: var(--ink-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--bg-alabaster);
+  color: var(--ink-primary);
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--teak-primary);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teak-primary);
+  outline-offset: 3px;
+}
+
+/* Superficies translúcidas calibradas con la paleta del taller */
+.apple-glass-light {
+  background: rgba(250, 247, 242, 0.78);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+}
+
+.apple-glass-dark {
+  background: rgba(20, 16, 14, 0.8);
+  backdrop-filter: saturate(180%) blur(28px);
+  -webkit-backdrop-filter: saturate(180%) blur(28px);
+}
