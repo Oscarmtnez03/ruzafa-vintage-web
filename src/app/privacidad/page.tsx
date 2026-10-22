@@ -8,7 +8,7 @@ import { BUSINESS_INFO } from "@/data/business";
 export const metadata: Metadata = {
   title: "Política de Privacidad y Protección de Datos (RGPD y LOPDGDD)",
   description:
-    "Segunda capa informativa de protección de datos personales de Ruzafa Vintage (Carrer de Puerto Rico, 33, 46006 València) conforme al RGPD y LOPDGDD.",
+    "Segunda capa informativa de protección de datos personales de A.C.D. Carlos Soriano (Calle Arquitecto Arnau, 61, 46020 València) conforme al RGPD y LOPDGDD.",
   alternates: {
     canonical: "/privacidad",
   },
@@ -34,7 +34,7 @@ export default function PrivacidadPage() {
               href="/"
               className="font-mono text-xs uppercase tracking-wider text-[#9A6B32] hover:underline"
             >
-              ← Volver a Ruzafa Vintage
+              ← Volver a A.C.D. Carlos Soriano
             </Link>
             <h1 className="font-serif text-3xl sm:text-5xl text-[#141210] mt-3">
               Política de Privacidad (Segunda Capa RGPD)

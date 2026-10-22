@@ -10,7 +10,7 @@ export function FloatingWhatsApp() {
   const { locale } = useLanguage();
 
   const url = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(
-    "Hola María José, te escribo desde la web de Ruzafa Vintage para enviarte fotos de una pieza y consultar su restauración."
+    "Hola Carlos, te escribo desde la web de A.C.D. Carlos Soriano para enviarte fotos de un mueble y consultar su restauración."
   )}`;
 
   return (
@@ -26,8 +26,8 @@ export function FloatingWhatsApp() {
         rel="noopener noreferrer"
         aria-label={
           locale === "es"
-            ? "Enviar fotos por WhatsApp a Ruzafa Vintage (+34 657 19 12 24)"
-            : "Enviar fotos per WhatsApp a Ruzafa Vintage (+34 657 19 12 24)"
+            ? "Enviar fotos por WhatsApp a A.C.D. Carlos Soriano (+34 670 41 80 08)"
+            : "Enviar fotos per WhatsApp a A.C.D. Carlos Soriano (+34 670 41 80 08)"
         }
         className="group inline-flex items-center gap-2.5 px-5 py-3.5 rounded-full apple-glass-dark text-white ring-1 ring-white/20 hover:ring-[#D4A66A] shadow-[0_18px_40px_-8px_rgba(0,0,0,0.45)] transition-all"
       >

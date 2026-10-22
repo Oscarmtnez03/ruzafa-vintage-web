@@ -32,23 +32,23 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ruzafavintage.es"),
+  metadataBase: new URL("https://carlossorianorestauracion.es"),
   title: {
     default:
-      "Ruzafa Vintage | Restauración de Muebles y Lámparas de Araña en Valencia",
-    template: "%s | Ruzafa Vintage · Taller de Restauración en València",
+      "A.C.D. Carlos Soriano | Restauración de Muebles, Ebanistería y Antigüedades en Valencia",
+    template: "%s | A.C.D. Carlos Soriano · Ebanistería y Restauración en València",
   },
   description:
-    "Taller artesanal de restauración de muebles de los años 50, 60, 70 y 80 y recuperación y electrificación de lámparas de araña en Carrer de Puerto Rico, 33 (Ruzafa, València). Dirigido por María José Martínez. Cita previa: 657 19 12 24.",
+    "Taller artesanal de restauración de muebles antiguos, ebanistería, tratamientos contra carcoma y tapicería en Calle Arquitecto Arnau, 61 (Benimaclet, València). Dirigido por el maestro ebanista Carlos Soriano. Presupuestos: 670 41 80 08.",
   keywords: [
     "restauración de muebles Valencia",
-    "restauración de lámparas de araña Valencia",
-    "Ruzafa Vintage",
-    "taller de restauración Ruzafa",
-    "mobiliario mid-century Valencia",
-    "restaurar aparador años 60 Valencia",
-    "electrificación lámparas antiguas Valencia",
-    "María José Martínez restauradora Valencia",
+    "ebanistería Valencia",
+    "Carlos Soriano restaurador Valencia",
+    "A.C.D. Carlos Soriano Benimaclet",
+    "tratamiento carcoma muebles Valencia",
+    "barnizado a muñequilla goma laca Valencia",
+    "tapicería y restauración de sillas Valencia",
+    "restauración de antigüedades Valencia",
   ],
   alternates: {
     canonical: "/",
@@ -56,12 +56,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://ruzafavintage.es",
-    siteName: "Ruzafa Vintage · Taller de Restauración en València",
+    url: "https://carlossorianorestauracion.es",
+    siteName: "A.C.D. Carlos Soriano · Restauración y Ebanistería en València",
     title:
-      "Ruzafa Vintage | Restauración de Muebles Mid-Century y Lámparas de Araña en Valencia",
+      "A.C.D. Carlos Soriano | Maestro Ebanista y Restauración de Muebles en Valencia",
     description:
-      "Devolvemos la luz y el alma a tus lámparas de araña y mobiliario de los años 50 a 80 en nuestro taller de Carrer de Puerto Rico, 33 (Ruzafa, València).",
+      "Devolvemos la vida a tus muebles antiguos, sillería y maderas nobles en nuestro taller de C/ Arquitecto Arnau, 61 (Benimaclet, València). Tel/WhatsApp: 670 41 80 08.",
   },
   robots: {
     index: true,
@@ -78,14 +78,15 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "HomeAndConstructionBusiness",
-        "@id": "https://ruzafavintage.es/#localbusiness",
+        "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
+        "@id": "https://carlossorianorestauracion.es/#localbusiness",
         name: BUSINESS_INFO.name,
         description:
-          "Taller artesanal especializado en restauración de mobiliario de las décadas de 1950 a 1980, recuperación y electrificación de lámparas de araña clásicas y personalización de piezas en el barrio de Ruzafa, Valencia.",
-        url: "https://ruzafavintage.es",
+          "Taller maestro de restauración de muebles antiguos y clásicos, ebanistería artesanal, tratamientos curativos contra carcoma y xilófagos, y tapicería tradicional en Benimaclet, Valencia.",
+        url: "https://carlossorianorestauracion.es",
         telephone: BUSINESS_INFO.phoneE164,
         email: BUSINESS_INFO.email,
+        priceRange: "€€",
         founder: {
           "@type": "Person",
           name: BUSINESS_INFO.founder,
@@ -106,30 +107,32 @@ export default function RootLayout({
         },
         areaServed: [
           { "@type": "City", name: "València" },
-          { "@type": "Place", name: "Ruzafa (Russafa)" },
+          { "@type": "Place", name: "Benimaclet, València" },
+          { "@type": "Place", name: "El Pla del Real, València" },
           { "@type": "Place", name: "L'Eixample, València" },
           { "@type": "Place", name: "Ciutat Vella, València" },
           { "@type": "City", name: "Alboraia" },
+          { "@type": "City", name: "Godella" },
           { "@type": "City", name: "Paterna" },
         ],
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
             dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "10:00",
+            opens: "09:30",
             closes: "14:00",
           },
           {
             "@type": "OpeningHoursSpecification",
             dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "17:00",
+            opens: "16:30",
             closes: "20:00",
           },
         ],
       },
       {
         "@type": "FAQPage",
-        "@id": "https://ruzafavintage.es/#faq",
+        "@id": "https://carlossorianorestauracion.es/#faq",
         mainEntity: FAQS.map((faq) => ({
           "@type": "Question",
           name: faq.questionEs,
@@ -153,11 +156,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#F7F4EE] text-[#1C1917]">
+      <body className="min-h-full flex flex-col bg-[#FAF7F2] text-[#1A1412]">
         <LanguageProvider>
           <a
             href="#contenido-principal"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#1C1917] focus:text-[#F7F4EE] focus:font-mono focus:text-xs"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#1A1412] focus:text-[#FAF7F2] focus:font-mono focus:text-xs"
           >
             Saltar al contenido principal
           </a>

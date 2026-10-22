@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://ruzafavintage.es/sitemap.xml",
+    sitemap: "https://carlossorianorestauracion.es/sitemap.xml",
   };
 }

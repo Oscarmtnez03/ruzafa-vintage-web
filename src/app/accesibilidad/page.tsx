@@ -8,7 +8,7 @@ import { BUSINESS_INFO } from "@/data/business";
 export const metadata: Metadata = {
   title: "Declaración de Accesibilidad Web (WCAG 2.1 AA)",
   description:
-    "Declaración de accesibilidad y compromiso de inclusión digital del sitio web de Ruzafa Vintage (València) conforme a las pautas WCAG 2.1 nivel AA y norma UNE-EN 301 549.",
+    "Declaración de accesibilidad y compromiso de inclusión digital del sitio web de A.C.D. Carlos Soriano (València) conforme a las pautas WCAG 2.1 nivel AA y norma UNE-EN 301 549.",
   alternates: {
     canonical: "/accesibilidad",
   },
@@ -28,7 +28,7 @@ export default function AccesibilidadPage() {
               href="/"
               className="font-mono text-xs uppercase tracking-wider text-[#9A6B32] hover:underline"
             >
-              ← Volver a Ruzafa Vintage
+              ← Volver a A.C.D. Carlos Soriano
             </Link>
             <h1 className="font-serif text-3xl sm:text-5xl text-[#141210] mt-3">
               Declaración de Accesibilidad

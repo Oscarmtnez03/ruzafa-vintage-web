@@ -21,15 +21,15 @@ export interface DiagnosticPrefill {
 
 export type CookieConsentMode = "unset" | "essential_only" | "all_accepted";
 
-const COOKIE_STORAGE_KEY = "ruzafa_vintage_cookie_consent_v2";
-const LOCALE_STORAGE_KEY = "ruzafa_locale_v1";
+const COOKIE_STORAGE_KEY = "carlos_soriano_cookie_consent_v2";
+const LOCALE_STORAGE_KEY = "carlos_soriano_locale_v1";
 
 function subscribeToCookieStorage(callback: () => void) {
   window.addEventListener("storage", callback);
-  window.addEventListener("ruzafa-cookie-change", callback);
+  window.addEventListener("carlos-cookie-change", callback);
   return () => {
     window.removeEventListener("storage", callback);
-    window.removeEventListener("ruzafa-cookie-change", callback);
+    window.removeEventListener("carlos-cookie-change", callback);
   };
 }
 
@@ -120,7 +120,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             version: "2.0-AEPD-2024",
           })
         );
-        window.dispatchEvent(new Event("ruzafa-cookie-change"));
+        window.dispatchEvent(new Event("carlos-cookie-change"));
       } catch {
         // ignore storage errors
       }

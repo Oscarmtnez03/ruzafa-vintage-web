@@ -35,8 +35,8 @@ export function ProcessSection() {
               <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
               <span>
                 {locale === "es"
-                  ? "04 · METODOLOGÍA DE TALLER EN RUZAFA"
-                  : "04 · METODOLOGIA DE TALLER A RUSSAFA"}
+                  ? "04 · METODOLOGÍA DE TALLER EN BENIMACLET"
+                  : "04 · METODOLOGIA DE TALLER A BENIMACLET"}
               </span>
             </div>
             <h2 className="font-serif text-3xl sm:text-5xl text-[#141210] leading-[1.08] tracking-tight">
@@ -67,7 +67,7 @@ export function ProcessSection() {
                       FASE · {stepItem.step}
                     </span>
                     <span className="font-mono text-[10px] text-[#78716C]">
-                      C/ PUERTO RICO 33
+                      C/ ARQUITECTO ARNAU 61
                     </span>
                   </div>
 
@@ -112,20 +112,20 @@ export function ProcessSection() {
 
               <h3 className="font-serif text-3xl sm:text-4xl text-[#F7F4EE] leading-tight">
                 {locale === "es"
-                  ? "Lo que destacan las guías de artesanía y los clientes de Ruzafa Vintage."
-                  : "El que destaquen les guies d'artesania i els clients de Ruzafa Vintage."}
+                  ? "Trayectoria institucional y qué valoran los clientes de A.C.D. Carlos Soriano."
+                  : "Trajectòria institucional i què valoren els clients d'A.C.D. Carlos Soriano."}
               </h3>
 
               <p className="text-sm sm:text-base text-[#C2B9AC] leading-relaxed">
                 {locale === "es"
-                  ? "No publicamos reseñas anónimas inventadas. La reputación de María José Martínez en Valencia está respaldada por publicaciones editoriales de artesanía y directorios especializados de diseño."
-                  : "No publiquem ressenyes anònimes inventades. La reputació de María José Martínez a València està avalada per publicacions editorials d'artesania i directoris de disseny."}
+                  ? "El prestigio de Carlos Soriano en Valencia está avalado por encargos históricos como la elaboración de los sillones del Tribunal de las Aguas de Valencia y décadas de oficio ebanista en Benimaclet."
+                  : "El prestigi de Carlos Soriano a València està avalat per encàrrecs històrics com l'elaboració dels sillons del Tribunal de les Aigües de València."}
               </p>
 
               <div className="pt-3 border-t border-white/12 text-xs font-mono text-[#D4A66A]">
                 {locale === "es"
-                  ? "Titular del taller: María José Martínez · Ruzafa, València"
-                  : "Titular del taller: María José Martínez · Russafa, València"}
+                  ? "Maestro titular: Carlos Soriano · Benimaclet, València"
+                  : "Mestre titular: Carlos Soriano · Benimaclet, València"}
               </div>
             </div>
 
@@ -160,13 +160,13 @@ export function ProcessSection() {
                   </p>
                   <p className="text-xs text-[#C2B9AC] mt-1">
                     {locale === "es"
-                      ? "1) La recuperación impecable de lámparas de araña heredadas · 2) El respeto por las maderas de los años 50–80 · 3) El trato cercano y honesto de María José."
-                      : "1) La recuperació impecable de llums d'aranya heretats · 2) El respecte per les fustes dels anys 50–80 · 3) El tracte proper i honest de María José."}
+                      ? "1) Acabados a muñequilla con goma-laca impecables · 2) Ebanistería y erradicación de carcoma garantizada · 3) Trato directo y profesional de Carlos Soriano."
+                      : "1) Acabats a monyeca amb goma-laca impecables · 2) Ebanisteria i eradicació de corc garantida · 3) Tracte directe de Carlos Soriano."}
                   </p>
                 </div>
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                    "Ruzafa Vintage Carrer de Puerto Rico 33 Valencia"
+                    "Calle Arquitecto Arnau 61 46020 Valencia"
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -220,7 +220,7 @@ export function ProcessSection() {
                   interventionScope:
                     "Atención a proyecto de interiorismo en Valencia",
                   notes:
-                    "Hola María José, somos un estudio de arquitectura/interiorismo en Valencia y nos gustaría comentar una pieza o proyecto con vuestro taller.",
+                    "Hola Carlos, somos un estudio de arquitectura/interiorismo en Valencia y nos gustaría comentar un proyecto de restauración o ebanistería con vuestro taller.",
                 })
               }
               className="w-full min-h-13 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#141210] text-[#F7F4EE] hover:bg-[#9A6B32] transition-colors font-mono text-xs uppercase tracking-wider shadow-md cursor-pointer"

@@ -485,8 +485,8 @@ export function AnatomyExplorer() {
                       <CheckCircle2 className="w-3.5 h-3.5" aria-hidden="true" />
                       <span>
                         {locale === "es"
-                          ? "Solución artesanal en Ruzafa Vintage:"
-                          : "Solució artesanal a Ruzafa Vintage:"}
+                          ? "Solución artesanal en A.C.D. Carlos Soriano:"
+                          : "Solució artesanal a A.C.D. Carlos Soriano:"}
                       </span>
                     </span>
                     <p className="text-sm text-[#141210] leading-relaxed">
@@ -553,8 +553,8 @@ export function AnatomyExplorer() {
             </div>
             <span className="font-mono text-xs text-[#2A3C34] bg-[#E6ECE8] px-3 py-1 rounded-full">
               {locale === "es"
-                ? "Muestras físicas disponibles en C/ Puerto Rico, 33"
-                : "Mostres físiques disponibles al C/ Puerto Rico, 33"}
+                ? "Muestras físicas disponibles en C/ Arquitecto Arnau, 61"
+                : "Mostres físiques disponibles al C/ Arquitecte Arnau, 61"}
             </span>
           </div>
 

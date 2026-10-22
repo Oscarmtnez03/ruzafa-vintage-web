@@ -8,7 +8,7 @@ import { BUSINESS_INFO } from "@/data/business";
 export const metadata: Metadata = {
   title: "Aviso Legal (LSSI-CE)",
   description:
-    "Información legal conforme al artículo 10 de la Ley 34/2002 (LSSI-CE) del taller artesanal Ruzafa Vintage en Carrer de Puerto Rico, 33, 46006 València.",
+    "Información legal conforme al artículo 10 de la Ley 34/2002 (LSSI-CE) del taller de restauración y ebanistería A.C.D. Carlos Soriano en Calle Arquitecto Arnau, 61, 46020 València.",
   alternates: {
     canonical: "/aviso-legal",
   },
@@ -34,7 +34,7 @@ export default function AvisoLegalPage() {
               href="/"
               className="font-mono text-xs uppercase tracking-wider text-[#9A6B32] hover:underline"
             >
-              ← Volver a Ruzafa Vintage
+              ← Volver a A.C.D. Carlos Soriano
             </Link>
             <h1 className="font-serif text-3xl sm:text-5xl text-[#141210] mt-3">
               Aviso Legal (LSSI-CE)
@@ -78,8 +78,8 @@ export default function AvisoLegalPage() {
               </li>
               <li>
                 <strong>Actividad:</strong> Taller artesanal de restauración de
-                muebles, recuperación y electrificación de lámparas de araña y
-                mobiliario (CNAE 9524 · Reparación de muebles y artículos de
+                muebles, ebanistería tradicional, tratamientos antixilófagos y
+                tapicería (CNAE 9524 · Reparación de muebles y artículos de
                 menaje). Actividad no sujeta a régimen de autorización
                 administrativa previa especial ni colegiación obligatoria.
               </li>

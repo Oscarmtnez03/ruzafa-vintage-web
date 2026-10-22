@@ -19,52 +19,52 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const HERO_SCENES = [
   {
-    id: "arana",
-    tabEs: "Lámparas de Araña",
-    tabVa: "Llums d'Aranya",
-    badgeEs: "ESPECIALIDAD SINGULAR · CRISTAL Y BRONCE",
-    badgeVa: "ESPECIALITAT SINGULAR · CRISTALL I BRONZE",
-    titleEs: "Recuperación óptica y electrificación completa de lámparas de araña.",
-    titleVa: "Recuperació òptica i electrificació completa de llums d'aranya.",
-    spec1Es: "Engarce manual en latón",
-    spec1Va: "Engalzat manual en llautó",
-    spec2Es: "Recableado ignífugo seguro",
-    spec2Va: "Recablejat ignífug segur",
+    id: "ebanisteria",
+    tabEs: "Ebanistería & Talla",
+    tabVa: "Ebanisteria & Talla",
+    badgeEs: "MAESTRÍA ARTESANAL · VALÈNCIA",
+    badgeVa: "MESTRIA ARTESANAL · VALÈNCIA",
+    titleEs: "Ebanistería de autor, sillería histórica y acabados a muñequilla con goma-laca.",
+    titleVa: "Ebanisteria d'autor, cadirat històric i acabats a monyeca amb goma-laca.",
+    spec1Es: "Sillones Tribunal de las Aguas",
+    spec1Va: "Sillons Tribunal de les Aigües",
+    spec2Es: "Goma-laca y ceras vírgenes",
+    spec2Va: "Goma-laca i ceres verges",
     image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1200&q=85",
-    alt: "Detalle de lámpara de araña clásica de cristal tallado y bronce",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
+    alt: "Sillón clásico de madera noble restaurado artesanalmente en taller",
   },
   {
-    id: "midcentury",
-    tabEs: "Mid-Century 50·80",
-    tabVa: "Mid-Century 50·80",
-    badgeEs: "EBANISTERÍA EUROPEA · AÑOS 1950–1980",
-    badgeVa: "EBANISTERIA EUROPEA · ANYS 1950–1980",
-    titleEs: "Aparadores escandinavos, teca birmana y nogal nutridos a muñequilla.",
-    titleVa: "Aparadors escandinaus, teca birmana i noguera nodrits a monyeca.",
-    spec1Es: "Respeto por la veta original",
-    spec1Va: "Respecte per la veta original",
-    spec2Es: "Aceites naturales y goma-laca",
-    spec2Va: "Olis naturals i goma-laca",
+    id: "mobiliario",
+    tabEs: "Mueble Antiguo",
+    tabVa: "Moble Antic",
+    badgeEs: "RESTAURACIÓN DE ANTIGÜEDADES Y SIGLO XX",
+    badgeVa: "RESTAURACIÓ D'ANTIGUITATS I SEGLE XX",
+    titleEs: "Cómodas, aparadores, consolas y escritorios recuperados respetando su pátina.",
+    titleVa: "Còmodes, aparadors, consoles i escriptoris recuperats respectant la pàtina.",
+    spec1Es: "Reintegración de marquetería",
+    spec1Va: "Reintegració de marqueteria",
+    spec2Es: "Consolidación de ensambles",
+    spec2Va: "Consolidació d'ensambles",
     image:
       "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85",
-    alt: "Aparador mid-century de madera cálida de los años 60",
+    alt: "Aparador de madera noble restaurado en taller de ebanistería",
   },
   {
-    id: "taller",
-    tabEs: "Oficio en Ruzafa",
-    tabVa: "Ofici a Russafa",
-    badgeEs: "CARRER DE PUERTO RICO, 33 · VALÈNCIA",
-    badgeVa: "CARRER DE PUERTO RICO, 33 · VALÈNCIA",
-    titleEs: "Intervención artesanal pieza a pieza por María José Martínez.",
-    titleVa: "Intervenció artesanal peça a peça per María José Martínez.",
-    spec1Es: "Diagnóstico honesto sin coste",
-    spec1Va: "Diagnòstic honest sense cost",
-    spec2Es: "Guía Cervezas Alhambra",
-    spec2Va: "Guia Cervezas Alhambra",
+    id: "sanidad-tapiceria",
+    tabEs: "Carcoma & Tapicería",
+    tabVa: "Corc & Tapisseria",
+    badgeEs: "C/ ARQUITECTO ARNAU, 61 · BENIMACLET",
+    badgeVa: "C/ ARQUITECTE ARNAU, 61 · BENIMACLET",
+    titleEs: "Fumigación curativa contra carcoma, tejido de rejilla y tapicería tradicional.",
+    titleVa: "Fumigació curativa contra corc, teixit de reixeta i tapisseria tradicional.",
+    spec1Es: "Erradicación de xilófagos",
+    spec1Va: "Eradicació de xilòfags",
+    spec2Es: "Tapizado y rejilla a mano",
+    spec2Va: "Tapissat i reixeta a mà",
     image:
       "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=85",
-    alt: "Detalle de trabajo artesanal sobre madera noble en el taller",
+    alt: "Detalle de trabajo artesanal de ebanistería sobre madera noble",
   },
 ] as const;
 
@@ -76,7 +76,7 @@ export function Hero() {
   const activeScene = HERO_SCENES[activeSceneIndex];
 
   const whatsappHeroUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(
-    "Hola María José, te escribo desde la web de Ruzafa Vintage. Me gustaría enviarte fotos de una pieza para valorar su restauración."
+    "Hola Carlos, te escribo desde la web de A.C.D. Carlos Soriano. Me gustaría enviarte fotos de un mueble para valorar su restauración."
   )}`;
 
   return (
@@ -172,7 +172,7 @@ export function Hero() {
                   className="w-4 h-4 text-[#2A3C34]"
                   aria-hidden="true"
                 />
-                <span>{t.secondaryCta} · 657 19 12 24</span>
+                <span>{t.secondaryCta} · 670 41 80 08</span>
               </motion.a>
             </motion.div>
 
@@ -196,12 +196,12 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="font-mono uppercase text-[10px] tracking-wider text-[#84776D]">
-                    {locale === "es" ? "Ubicación Real" : "Ubicació Real"}
+                    {locale === "es" ? "Taller en Valencia" : "Taller a València"}
                   </p>
                   <p className="font-semibold text-[#1A1412] mt-0.5">
-                    C/ Puerto Rico, 33
+                    C/ Arquitecto Arnau, 61
                   </p>
-                  <p className="text-[#5C5149]">46006 Ruzafa, València</p>
+                  <p className="text-[#5C5149]">46020 Benimaclet, València</p>
                 </div>
               </div>
 
@@ -215,16 +215,16 @@ export function Hero() {
                 <div>
                   <p className="font-mono uppercase text-[10px] tracking-wider text-[#84776D]">
                     {locale === "es"
-                      ? "Dirección Artesanal"
-                      : "Direcció Artesanal"}
+                      ? "Maestro Ebanista"
+                      : "Mestre Ebanista"}
                   </p>
                   <p className="font-semibold text-[#1A1412] mt-0.5">
-                    María José Martínez
+                    Carlos Soriano
                   </p>
                   <p className="text-[#2A3C34] font-medium">
                     {locale === "es"
-                      ? "Guía Cervezas Alhambra"
-                      : "Guia Cervezas Alhambra"}
+                      ? "Sillones Tribunal de las Aguas"
+                      : "Sillons Tribunal de les Aigües"}
                   </p>
                 </div>
               </div>
@@ -239,13 +239,13 @@ export function Hero() {
                 <div>
                   <p className="font-mono uppercase text-[10px] tracking-wider text-[#84776D]">
                     {locale === "es"
-                      ? "Recepción de Piezas"
-                      : "Recepció de Peces"}
+                      ? "Presupuesto Rápido"
+                      : "Pressupost Ràpid"}
                   </p>
                   <p className="font-semibold text-[#1A1412] mt-0.5">
                     {locale === "es"
-                      ? "Atención con Cita Previa"
-                      : "Atenció amb Cita Prèvia"}
+                      ? "Taller y Domicilio"
+                      : "Taller i Domicili"}
                   </p>
                   <p className="text-[#5C5149]">
                     {locale === "es"

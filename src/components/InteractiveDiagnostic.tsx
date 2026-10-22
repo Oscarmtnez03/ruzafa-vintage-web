@@ -126,13 +126,13 @@ const PIECE_OPTIONS: OptionItem[] = [
     labelVa: "Recerca de peça singular per encàrrec (Sourcing)",
     protocolEs: [
       "Definición de medidas máximas, década buscada (años 50, 60, 70 u 80) y tipología",
-      "Muestra de piezas disponibles en el taller de C/ Puerto Rico, 33 o búsqueda activa",
+      "Muestra de piezas disponibles en el taller de C/ Arquitecto Arnau, 61 o búsqueda activa",
       "Restauración y puesta a punto completa antes de la entrega en tu domicilio o estudio",
       "Posibilidad de personalizar el acabado final o electrificación a medida",
     ],
     protocolVa: [
       "Definició de mides màximes, dècada buscada (anys 50 a 80) i tipologia",
-      "Mostra de peces disponibles al taller del C/ Puerto Rico, 33 o recerca activa",
+      "Mostra de peces disponibles al taller del C/ Arquitecte Arnau, 61 o recerca activa",
       "Restauració i posada a punt completa abans del lliurament",
       "Possibilitat de personalitzar l'acabat final a mida",
     ],
@@ -162,7 +162,7 @@ const CONDITION_OPTIONS = [
 ];
 
 const LOGISTICS_OPTIONS = [
-  "Puedo acercar la pieza al taller en C/ Puerto Rico, 33 (Ruzafa) con cita previa",
+  "Puedo acercar la pieza al taller en C/ Arquitecto Arnau, 61 (Benimaclet) con cita previa",
   "Necesito coordinar recogida y entrega en Valencia capital",
   "Necesito coordinar recogida y entrega en área metropolitana (Alboraia, Paterna, Godella, Torrent...)",
 ];
@@ -194,7 +194,7 @@ export function InteractiveDiagnostic() {
   const photoTipText =
     locale === "es" ? currentPiece.photoTipEs : currentPiece.photoTipVa;
 
-  const whatsappSummary = `Hola María José, he configurado mi consulta en la web de Ruzafa Vintage:
+  const whatsappSummary = `Hola Carlos, he configurado mi consulta en la web de A.C.D. Carlos Soriano:
 • Pieza: ${pieceLabel}
 • Material/Época: ${selectedMaterial}
 • Necesidad: ${selectedCondition}
@@ -436,8 +436,8 @@ Me gustaría enviarte unas fotos para valorarlo.`;
                   <div>
                     <p className="font-mono text-xs uppercase tracking-wider text-[#C2B9AC] mb-3">
                       {locale === "es"
-                        ? "Fases técnicas previstas en C/ Puerto Rico, 33:"
-                        : "Fases tècniques previstes al C/ Puerto Rico, 33:"}
+                        ? "Fases técnicas previstas en C/ Arquitecto Arnau, 61:"
+                        : "Fases tècniques previstes al C/ Arquitecte Arnau, 61:"}
                     </p>
                     <ul className="space-y-2.5">
                       {protocolList.map((step, index) => (
@@ -522,8 +522,8 @@ Me gustaría enviarte unas fotos para valorarlo.`;
                   />
                   <span>
                     {locale === "es"
-                      ? "Enviar ficha por WhatsApp · 657 19 12 24"
-                      : "Enviar fitxa per WhatsApp · 657 19 12 24"}
+                      ? "Enviar ficha por WhatsApp · 670 41 80 08"
+                      : "Enviar fitxa per WhatsApp · 670 41 80 08"}
                   </span>
                 </motion.a>
 

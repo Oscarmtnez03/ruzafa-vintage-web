@@ -37,8 +37,8 @@ export default function NotFound() {
 
           <p className="text-sm sm:text-base text-[#443E38] leading-relaxed">
             {locale === "es"
-              ? "Puedes regresar al taller principal de Ruzafa Vintage en Carrer de Puerto Rico, 33 para consultar nuestras intervenciones en lámparas de araña y mobiliario mid-century, o solicitar una valoración técnica directa."
-              : "Pots tornar al taller principal de Ruzafa Vintage al Carrer de Puerto Rico, 33 per consultar les nostres intervencions en llums d'aranya i mobiliari mid-century, o sol·licitar una valoració tècnica directa."}
+              ? "Puedes regresar al taller principal de A.C.D. Carlos Soriano en Calle Arquitecto Arnau, 61 (Benimaclet, València) para consultar nuestras especialidades en restauración de muebles, ebanistería y tapicería."
+              : "Pots tornar al taller principal d'A.C.D. Carlos Soriano al Carrer Arquitecte Arnau, 61 (Benimaclet, València) per consultar les nostres especialitats en restauració de mobles, ebanisteria i tapisseria."}
           </p>
 
           <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -56,7 +56,7 @@ export default function NotFound() {
             >
               <Sparkles className="w-4 h-4 text-[#A65E2E]" aria-hidden="true" />
               <span>
-                {locale === "es" ? "Solicitar valoración" : "Sol·licitar valoració"}
+                {locale === "es" ? "Solicitar presupuesto" : "Sol·licitar pressupost"}
               </span>
             </Link>
           </div>

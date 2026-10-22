@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Política de Cookies (Guía AEPD 2024)",
   description:
-    "Información detallada sobre el uso de almacenamiento local técnico y el bloqueo preventivo de servicios de terceros en Ruzafa Vintage (València).",
+    "Información detallada sobre el uso de almacenamiento local técnico y el bloqueo preventivo de servicios de terceros en A.C.D. Carlos Soriano (València).",
   alternates: {
     canonical: "/cookies",
   },
@@ -27,7 +27,7 @@ export default function CookiesPage() {
               href="/"
               className="font-mono text-xs uppercase tracking-wider text-[#9A6B32] hover:underline"
             >
-              ← Volver a Ruzafa Vintage
+              ← Volver a A.C.D. Carlos Soriano
             </Link>
             <h1 className="font-serif text-3xl sm:text-5xl text-[#141210] mt-3">
               Política de Cookies
@@ -69,9 +69,9 @@ export default function CookiesPage() {
                 <tbody className="divide-y divide-black/10">
                   <tr>
                     <td className="p-3.5 font-mono">
-                      ruzafa_vintage_cookie_consent_v2
+                      carlos_soriano_cookie_consent_v2
                     </td>
-                    <td className="p-3.5">Propia (Ruzafa Vintage)</td>
+                    <td className="p-3.5">Propia (A.C.D. Carlos Soriano)</td>
                     <td className="p-3.5">Técnica / Necesaria (Exenta)</td>
                     <td className="p-3.5">
                       Almacena el estado de consentimiento otorgado o denegado
@@ -89,8 +89,8 @@ export default function CookiesPage() {
                     </td>
                     <td className="p-3.5">Contenido externo opcional</td>
                     <td className="p-3.5">
-                      Muestra el plano cartográfico interactivo de la C/ Puerto
-                      Rico, 33.{" "}
+                      Muestra el plano cartográfico interactivo de la C/
+                      Arquitecto Arnau, 61.{" "}
                       <strong>
                         Permanece bloqueado por defecto hasta que el usuario
                         pulsa «Aceptar todas» o «Cargar mapa interactivo».

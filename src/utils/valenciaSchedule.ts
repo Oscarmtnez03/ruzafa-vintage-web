@@ -34,9 +34,9 @@ export function useValenciaWorkshopStatus(locale: Locale): WorkshopLiveStatus {
       isOpen: true,
       label:
         locale === "es"
-          ? "Atención personalizada con cita previa (L–V 10–14h y 17–20h)"
-          : "Atenció personalitzada amb cita prèvia (Dl–Dv 10–14h i 17–20h)",
-      shortLabel: locale === "es" ? "Cita previa activa" : "Cita prèvia activa",
+          ? "Atención en taller (L–V 09:30–14:00 y 16:30–20:00)"
+          : "Atenció al taller (Dl–Dv 09:30–14:00 i 16:30–20:00)",
+      shortLabel: locale === "es" ? "Taller en Benimaclet" : "Taller a Benimaclet",
     };
   }
 
@@ -59,33 +59,33 @@ export function useValenciaWorkshopStatus(locale: Locale): WorkshopLiveStatus {
     const isWeekday = ["Mon", "Tue", "Wed", "Thu", "Fri"].includes(weekday);
     const isSaturday = weekday === "Sat";
 
-    // Morning: 10:00 (600) to 14:00 (840)
-    if (isWeekday && totalMinutes >= 600 && totalMinutes < 840) {
+    // Morning: 09:30 (570) to 14:00 (840)
+    if (isWeekday && totalMinutes >= 570 && totalMinutes < 840) {
       return {
         isOpen: true,
         label:
           locale === "es"
-            ? "Taller abierto ahora en Ruzafa (hasta las 14:00 h) · Cita previa"
-            : "Taller obert ara a Russafa (fins a les 14:00 h) · Cita prèvia",
+            ? "Taller abierto ahora en Benimaclet (hasta las 14:00 h)"
+            : "Taller obert ara a Benimaclet (fins a les 14:00 h)",
         shortLabel:
           locale === "es"
-            ? "Abierto ahora · Cita previa"
-            : "Obert ara · Cita prèvia",
+            ? "Abierto ahora · Benimaclet"
+            : "Obert ara · Benimaclet",
       };
     }
 
-    // Afternoon: 17:00 (1020) to 20:00 (1200)
-    if (isWeekday && totalMinutes >= 1020 && totalMinutes < 1200) {
+    // Afternoon: 16:30 (990) to 20:00 (1200)
+    if (isWeekday && totalMinutes >= 990 && totalMinutes < 1200) {
       return {
         isOpen: true,
         label:
           locale === "es"
-            ? "Taller abierto ahora en Ruzafa (hasta las 20:00 h) · Cita previa"
-            : "Taller obert ara a Russafa (fins a les 20:00 h) · Cita prèvia",
+            ? "Taller abierto ahora en Benimaclet (hasta las 20:00 h)"
+            : "Taller obert ara a Benimaclet (fins a les 20:00 h)",
         shortLabel:
           locale === "es"
-            ? "Abierto ahora · Cita previa"
-            : "Obert ara · Cita prèvia",
+            ? "Abierto ahora · Benimaclet"
+            : "Obert ara · Benimaclet",
       };
     }
 
@@ -95,23 +95,23 @@ export function useValenciaWorkshopStatus(locale: Locale): WorkshopLiveStatus {
         isOpen: true,
         label:
           locale === "es"
-            ? "Sábado mañana · Atención de citas concertadas en taller"
-            : "Dissabte matí · Atenció de cites concertades al taller",
+            ? "Sábado mañana · Atención con cita previa en taller"
+            : "Dissabte matí · Atenció amb cita prèvia al taller",
         shortLabel:
           locale === "es" ? "Sábado · Con cita" : "Dissabte · Amb cita",
       };
     }
 
-    // Midday break on weekdays (14:00 to 17:00)
-    if (isWeekday && totalMinutes >= 840 && totalMinutes < 1020) {
+    // Midday break on weekdays (14:00 to 16:30)
+    if (isWeekday && totalMinutes >= 840 && totalMinutes < 990) {
       return {
         isOpen: false,
         label:
           locale === "es"
-            ? "Pausa de mediodía · Reapertura hoy a las 17:00 h (Recepción online activa)"
-            : "Pausa de migdia · Reobertura hui a les 17:00 h (Recepció online activa)",
+            ? "Pausa de mediodía · Reapertura hoy a las 16:30 h (WhatsApp activo)"
+            : "Pausa de migdia · Reobertura hui a les 16:30 h (WhatsApp actiu)",
         shortLabel:
-          locale === "es" ? "Reabre hoy 17:00 h" : "Reobri hui 17:00 h",
+          locale === "es" ? "Reabre hoy 16:30 h" : "Reobri hui 16:30 h",
       };
     }
 
@@ -119,21 +119,21 @@ export function useValenciaWorkshopStatus(locale: Locale): WorkshopLiveStatus {
       isOpen: false,
       label:
         locale === "es"
-          ? "Taller cerrado ahora · Recepción de valoraciones y fotos activa 24 h"
-          : "Taller tancat ara · Recepció de valoracions i fotos activa 24 h",
+          ? "Taller cerrado ahora · Recepción de fotos por WhatsApp activa 24 h"
+          : "Taller tancat ara · Recepció de fotos per WhatsApp activa 24 h",
       shortLabel:
         locale === "es"
-          ? "Cerrado · Valoración 24h"
-          : "Tancat · Valoració 24h",
+          ? "Cerrado · Presupuesto 24h"
+          : "Tancat · Pressupost 24h",
     };
   } catch {
     return {
       isOpen: true,
       label:
         locale === "es"
-          ? "Atención personalizada con cita previa"
-          : "Atenció personalitzada amb cita prèvia",
-      shortLabel: locale === "es" ? "Cita previa" : "Cita prèvia",
+          ? "Atención personalizada en Benimaclet"
+          : "Atenció personalitzada a Benimaclet",
+      shortLabel: locale === "es" ? "Benimaclet" : "Benimaclet",
     };
   }
 }

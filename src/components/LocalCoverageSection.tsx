@@ -25,37 +25,37 @@ export function LocalCoverageSection() {
 
   const valenciaDistricts = [
     {
-      zone: "Ruzafa (Russafa) y L'Eixample",
+      zone: "Benimaclet y El Pla del Real",
       detailEs:
-        "Ubicación directa de nuestro taller en C/ Puerto Rico, 33. Atención habitual a viviendas modernistas y pisos de techos altos en Gran Vía, Pla del Remei y Russafa.",
+        "Ubicación directa de nuestro taller en C/ Arquitecto Arnau, 61. Atención habitual a viviendas de Benimaclet, Jaume Roig, Exposició, Mestalla y Trinitat.",
       detailVa:
-        "Ubicació directa del nostre taller al C/ Puerto Rico, 33. Atenció habitual a habitatges modernistes de Gran Via, Pla del Remei i Russafa.",
+        "Ubicació directa del nostre taller al C/ Arquitecto Arnau, 61. Atenció habitual a habitatges de Benimaclet, Jaume Roig, Exposició, Mestalla i Trinitat.",
     },
     {
-      zone: "Ciutat Vella, El Carmen y Extramurs",
+      zone: "Ciutat Vella, El Carmen y L'Eixample",
       detailEs:
-        "Restauración de lámparas de araña clásicas, portones, consolas y mobiliario de época en edificios históricos del centro de Valencia y Abastos.",
+        "Restauración de mobiliario antiguo, consolas, sillería y tratamientos contra carcoma en pisos históricos del centro de Valencia, Gran Vía y Pla del Remei.",
       detailVa:
-        "Restauració de llums d'aranya clàssics, consoles i mobiliari d'època en edificis històrics del centre de València i Abastos.",
+        "Restauració de mobiliari antic, consoles, cadirat i tractaments contra corc en pisos històrics del centre de València, Gran Via i Pla del Remei.",
     },
     {
-      zone: "El Pla del Real, Aragón, Mestalla y Campanar",
+      zone: "Algirós, Aragón, Zaidía y Campanar",
       detailEs:
-        "Recuperación de aparadores escandinavos, comedores de los años 60 y 70, escritorios y sillería de madera noble.",
+        "Recuperación de comedores clásicos, aparadores de madera noble, escritorios, dormitorios antiguos y tapicería tradicional o rejilla.",
       detailVa:
-        "Recuperació d'aparadors escandinaus, menjadors dels anys 60 i 70, escriptoris i cadirat de fusta noble.",
+        "Recuperació de menjadors clàssics, aparadors de fusta noble, escriptoris, dormitoris antics i tapisseria tradicional o reixeta.",
     },
     {
-      zone: "Área Metropolitana (Alboraia, Paterna, Godella, Rocafort, Torrent, Mislata)",
+      zone: "Área Metropolitana (Alboraia, Godella, Rocafort, Paterna, Moncada, Torrent)",
       detailEs:
-        "Coordinación de recogida y entrega para piezas de gran formato y proyectos de interiorismo en viviendas unifamiliares y chalets.",
+        "Coordinación de recogida y entrega para muebles de gran formato y proyectos integrales de ebanistería en viviendas unifamiliares y alquerías.",
       detailVa:
-        "Coordinació de recollida i lliurament per a peces de gran format i projectes d'interiorisme en habitatges unifamiliars.",
+        "Coordinació de recollida i lliurament per a mobles de gran format i projectes integrals d'ebenisteria en habitatges unifamiliars i alqueries.",
     },
   ];
 
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    "Carrer de Puerto Rico, 33, 46006 València, España"
+    "Calle Arquitecto Arnau, 61, 46020 València, España"
   )}`;
 
   return (
@@ -75,19 +75,19 @@ export function LocalCoverageSection() {
             <Sparkles className="w-3.5 h-3.5 text-[#A65E2E]" aria-hidden="true" />
             <span>
               {locale === "es"
-                ? "05 · UBICACIÓN EN RUZAFA Y COBERTURA EN VALENCIA"
-                : "05 · UBICACIÓ A RUSSAFA I COBERTURA A VALÈNCIA"}
+                ? "05 · UBICACIÓN EN BENIMACLET Y COBERTURA EN VALENCIA"
+                : "05 · UBICACIÓ A BENIMACLET I COBERTURA A VALÈNCIA"}
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl text-[#1A1412] leading-[1.08] tracking-tight">
             {locale === "es"
-              ? "Visítanos con cita previa en Carrer de Puerto Rico, 33 (Ruzafa, València)."
-              : "Visita'ns amb cita prèvia al Carrer de Puerto Rico, 33 (Russafa, València)."}
+              ? "Visítanos en Calle Arquitecto Arnau, 61 (Benimaclet, València)."
+              : "Visita'ns al Carrer Arquitecto Arnau, 61 (Benimaclet, València)."}
           </h2>
           <p className="text-base sm:text-lg text-[#5C5349] mt-4 leading-relaxed">
             {locale === "es"
-              ? "Nuestro taller se encuentra en pleno barrio de Ruzafa (código postal 46006), entre las calles Cuba y Sueca. Atendemos encargos de toda Valencia capital y municipios del área metropolitana."
-              : "El nostre taller es troba en ple barri de Russafa (codi postal 46006), entre els carrers Cuba i Sueca. Atenem encàrrecs de tota València capital i àrea metropolitana."}
+              ? "Nuestro taller de restauración y ebanistería se encuentra en el barrio de Benimaclet (código postal 46020). Atendemos encargos de particulares, familias e instituciones de toda Valencia capital y área metropolitana."
+              : "El nostre taller de restauració i ebenisteria es troba al barri de Benimaclet (codi postal 46020). Atenem encàrrecs de tota València capital i àrea metropolitana."}
           </p>
         </motion.div>
 
@@ -216,12 +216,12 @@ export function LocalCoverageSection() {
                   <div>
                     <strong className="block font-mono text-xs uppercase text-[#5C5349]">
                       {locale === "es"
-                        ? "Accesos en Ruzafa:"
-                        : "Accessos a Russafa:"}
+                        ? "Accesos en Benimaclet:"
+                        : "Accessos a Benimaclet:"}
                     </strong>
                     <p className="text-[#5C5349] mt-0.5 text-xs leading-relaxed">
-                      Metrovalencia L10 (Parada Russafa) y Bailén (L7). Líneas
-                      EMT 7, 8, 14, 35 y C3.
+                      Metrovalencia L3 y L9, Tranvía L4 y L6 (Parada Benimaclet /
+                      Vicent Zaragozà). Líneas EMT 10, 12, 70 y 98.
                     </p>
                   </div>
                 </div>
@@ -265,17 +265,17 @@ export function LocalCoverageSection() {
             className="lg:col-span-5 rounded-[2rem] bg-white p-4 ring-1 ring-black/[0.08] shadow-xl"
           >
             <div className="flex items-center justify-between pb-3 mb-3 px-2 font-mono text-[11px] text-[#5C5349]">
-              <span>CARTOGRAFÍA · BARRIO DE RUZAFA</span>
+              <span>CARTOGRAFÍA · BARRIO DE BENIMACLET</span>
               <span className="text-[#A65E2E] font-semibold">
-                39.4601° N, 0.3752° W
+                39.4862° N, 0.3588° W
               </span>
             </div>
 
             <div className="relative w-full aspect-[4/4] rounded-2xl bg-[#14100E] overflow-hidden ring-1 ring-black/10 flex flex-col items-center justify-center">
               {isMapConsented ? (
                 <iframe
-                  title="Mapa de ubicación de Ruzafa Vintage en Carrer de Puerto Rico 33, Valencia"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.3805%2C39.4570%2C-0.3700%2C39.4635&layer=mapnik&marker=39.46012%2C-0.37524"
+                  title="Mapa de ubicación de A.C.D. Carlos Soriano en Calle Arquitecto Arnau 61, Valencia"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.3645%2C39.4830%2C-0.3530%2C39.4895&layer=mapnik&marker=39.48620%2C-0.35880"
                   className="w-full h-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -291,7 +291,7 @@ export function LocalCoverageSection() {
                       : "PROTECCIÓ DE DADES · BLOQUEIG PREVENTIU RGPD"}
                   </p>
                   <h4 className="font-serif text-2xl text-[#FAF7F2] leading-snug">
-                    Carrer de Puerto Rico, 33 · 46006 Ruzafa (València)
+                    Calle Arquitecto Arnau, 61 · 46020 Benimaclet (València)
                   </h4>
                   <p className="text-xs text-[#C7BCAE] leading-relaxed">
                     {locale === "es"
@@ -328,7 +328,7 @@ export function LocalCoverageSection() {
 
             <div className="mt-3 pt-2 px-2 flex items-center justify-between gap-2 text-xs">
               <span className="text-[#44403C] font-mono">
-                C/ Puerto Rico, 33 · 46006 València
+                C/ Arquitecto Arnau, 61 · 46020 València
               </span>
               <a
                 href={googleMapsUrl}

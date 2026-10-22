@@ -86,7 +86,7 @@ export function ServicesSection() {
                       ESPECIALIDAD · {service.number}
                     </span>
                     <span className="font-mono text-[11px] text-[#2A3C34] bg-[#E6ECE8] px-2.5 py-0.5 rounded-full">
-                      RUZAFA · VALÈNCIA
+                      BENIMACLET · VALÈNCIA
                     </span>
                   </div>
 

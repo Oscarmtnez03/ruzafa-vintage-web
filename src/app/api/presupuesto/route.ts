@@ -115,7 +115,7 @@ export async function POST(req: NextRequest) {
     const phoneRegex = /^(\+34|0034|34)?[6789]\d{8}$/;
     if (!phoneRegex.test(phoneClean)) {
       errors.phone =
-        "Introduce un teléfono válido de España (9 dígitos, ej. 657 19 12 24).";
+        "Introduce un teléfono válido de España (9 dígitos, ej. 670 41 80 08).";
     }
 
     if (email.length > 0) {
@@ -153,7 +153,7 @@ export async function POST(req: NextRequest) {
 
     recentSubmissions.set(ip, now);
 
-    const referenceCode = `RV-${new Date().getFullYear()}-${Math.floor(
+    const referenceCode = `CS-${new Date().getFullYear()}-${Math.floor(
       1000 + Math.random() * 9000
     )}`;
 
@@ -173,9 +173,9 @@ export async function POST(req: NextRequest) {
       privacyAccepted,
     };
 
-    // Direct WhatsApp link targeted at +34 657 19 12 24
-    const waText = `Hola María José, he registrado la solicitud de valoración ${referenceCode} en Ruzafa Vintage.\n• Nombre: ${fullName}\n• Pieza: ${pieceType}\n• Detalles: ${message.slice(0, 160)}`;
-    const whatsappUrl = `https://wa.me/34657191224?text=${encodeURIComponent(waText)}`;
+    // Direct WhatsApp link targeted at +34 670 41 80 08
+    const waText = `Hola Carlos, he registrado la solicitud de valoración ${referenceCode} en A.C.D. Carlos Soriano.\n• Nombre: ${fullName}\n• Pieza: ${pieceType}\n• Detalles: ${message.slice(0, 160)}`;
+    const whatsappUrl = `https://wa.me/34670418008?text=${encodeURIComponent(waText)}`;
 
     const isTestClean = req.headers.get("x-test-clean") === "true";
 
@@ -207,7 +207,7 @@ export async function POST(req: NextRequest) {
     const webhookUrl = process.env.CONTACT_WEBHOOK_URL;
     const resendApiKey = process.env.RESEND_API_KEY;
     const notificationEmail =
-      process.env.CONTACT_NOTIFICATION_EMAIL || "info@ruzafavintage.es";
+      process.env.CONTACT_NOTIFICATION_EMAIL || "contacto@carlossorianorestauracion.es";
 
     if (!isTestClean) {
       if (webhookUrl) {
@@ -230,7 +230,7 @@ export async function POST(req: NextRequest) {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              from: "Ruzafa Vintage Web <onboarding@resend.dev>",
+              from: "A.C.D. Carlos Soriano Web <onboarding@resend.dev>",
               to: [notificationEmail],
               subject: `[${referenceCode}] Nueva solicitud de valoración: ${pieceType} (${fullName})`,
               text: `Referencia: ${referenceCode}\nNombre: ${fullName}\nTeléfono: ${phone}\nEmail: ${email}\nZona: ${neighborhoodOrCity}\nPieza: ${pieceType}\nMaterial/Época: ${decadeOrMaterial}\nIntervención: ${interventionScope}\nFotos pre-seleccionadas: ${
@@ -263,7 +263,7 @@ export async function POST(req: NextRequest) {
       {
         ok: false,
         error:
-          "No se ha podido procesar la solicitud en este momento. Puedes escribirnos directamente por WhatsApp al +34 657 19 12 24.",
+          "No se ha podido procesar la solicitud en este momento. Puedes escribirnos directamente por WhatsApp al +34 670 41 80 08.",
       },
       { status: 500 }
     );

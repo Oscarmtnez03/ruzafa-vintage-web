@@ -45,13 +45,13 @@ function ContactFormInner({
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [neighborhoodOrCity, setNeighborhoodOrCity] = useState(
-    prefill.dimensionsOrLocation || "Ruzafa / València"
+    prefill.dimensionsOrLocation || "Benimaclet / València"
   );
   const [pieceType, setPieceType] = useState(
-    prefill.pieceType || "Lámpara de araña / Luminaria histórica"
+    prefill.pieceType || "Mueble antiguo o clásico / Ebanistería"
   );
   const [decadeOrMaterial] = useState(
-    prefill.decadeOrMaterial || "Años 1950–1980 · Bronce, cristal o madera noble"
+    prefill.decadeOrMaterial || "Madera maciza / Chapa de nogal o caoba"
   );
   const [interventionScope] = useState(
     prefill.interventionScope || "Valoración técnica general de restauración"
@@ -117,7 +117,7 @@ function ContactFormInner({
     if (!/^(\+34|0034|34)?[6789]\d{8}$/.test(cleanPhone)) {
       errs.phone =
         locale === "es"
-          ? "Introduce un teléfono válido de España (9 dígitos, ej. 657 19 12 24)."
+          ? "Introduce un teléfono válido de España (9 dígitos, ej. 670 41 80 08)."
           : "Introdueix un telèfon vàlid d'Espanya (9 dígits).";
     }
     if (
@@ -212,7 +212,7 @@ function ContactFormInner({
       setIsSubmitting(false);
     } catch {
       setGeneralError(
-        "Error de conexión con el servidor. Puedes escribirnos directamente por WhatsApp al +34 657 19 12 24."
+        "Error de conexión con el servidor. Puedes escribirnos directamente por WhatsApp al +34 670 41 80 08."
       );
       setIsSubmitting(false);
     }
@@ -286,8 +286,8 @@ function ContactFormInner({
 
         <div className="p-4 rounded-2xl border border-[#D4A359]/45 bg-[#D4A359]/10 text-xs text-[#EDE6DA] leading-relaxed">
           {locale === "es"
-            ? "Pulsa el siguiente botón para abrir WhatsApp con tu número de referencia ya preparado y enviar las fotografías directamente a María José:"
-            : "Prem el botó següent per obrir WhatsApp amb el teu número de referència i enviar les fotografies a María José:"}
+            ? "Pulsa el siguiente botón para abrir WhatsApp con tu número de referencia ya preparado y enviar las fotografías directamente a Carlos:"
+            : "Prem el botó següent per obrir WhatsApp amb el teu número de referència i enviar les fotografies a Carlos:"}
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
@@ -295,7 +295,7 @@ function ContactFormInner({
             href={`https://wa.me/${
               BUSINESS_INFO.whatsappNumber
             }?text=${encodeURIComponent(
-              `Hola María José, acabo de registrar la solicitud ${successData.referenceCode} en la web de Ruzafa Vintage.\n• Nombre: ${successData.fullName}\n• Pieza: ${successData.pieceType}\n• Detalles: ${successData.message}${
+              `Hola Carlos, acabo de registrar la solicitud ${successData.referenceCode} en la web de A.C.D. Carlos Soriano.\n• Nombre: ${successData.fullName}\n• Pieza: ${successData.pieceType}\n• Detalles: ${successData.message}${
                 successData.attachedPhotos.length > 0
                   ? `\n• Fotos preparadas: ${successData.attachedPhotos
                       .map((p) => p.name)
@@ -342,8 +342,8 @@ function ContactFormInner({
           </h3>
           <p className="text-xs text-[#C7BCAE] mt-0.5">
             {locale === "es"
-              ? "Respuesta directa desde el taller de C/ Puerto Rico, 33 (Ruzafa)"
-              : "Resposta directa des del taller del C/ Puerto Rico, 33 (Russafa)"}
+              ? "Respuesta directa desde el taller de C/ Arquitecto Arnau, 61 (Benimaclet)"
+              : "Resposta directa des del taller del C/ Arquitecto Arnau, 61 (Benimaclet)"}
           </p>
         </div>
         <span className="font-mono text-[11px] text-[#D4A359] uppercase px-3 py-1 rounded-full bg-white/[0.06] border border-white/10">
@@ -441,7 +441,7 @@ function ContactFormInner({
             required
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="Ej. 657 19 12 24"
+            placeholder="Ej. 670 41 80 08"
             aria-invalid={Boolean(fieldErrors.phone)}
             aria-describedby={fieldErrors.phone ? "err-phone" : undefined}
             className="w-full min-h-12 px-4 py-2.5 rounded-2xl bg-black/40 border border-white/15 text-[#FAF7F2] text-sm placeholder:text-[#78716C] focus:border-[#D4A359] focus:outline-none transition-colors"
@@ -495,7 +495,7 @@ function ContactFormInner({
             type="text"
             value={neighborhoodOrCity}
             onChange={(e) => setNeighborhoodOrCity(e.target.value)}
-            placeholder="Ej. Ruzafa, Gran Vía, Alboraia..."
+            placeholder="Ej. Benimaclet, El Pla del Real, Alboraia..."
             className="w-full min-h-12 px-4 py-2.5 rounded-2xl bg-black/40 border border-white/15 text-[#FAF7F2] text-sm placeholder:text-[#78716C] focus:border-[#D4A359] focus:outline-none transition-colors"
           />
         </div>
@@ -554,10 +554,10 @@ function ContactFormInner({
             <option value="Llamada telefónica">
               {locale === "es" ? "Llamada telefónica" : "Telefonada"}
             </option>
-            <option value="Cita presencial en C/ Puerto Rico, 33">
+            <option value="Cita presencial en C/ Arquitecto Arnau, 61 (Benimaclet)">
               {locale === "es"
-                ? "Cita presencial en C/ Puerto Rico, 33"
-                : "Cita presencial al C/ Puerto Rico, 33"}
+                ? "Cita presencial en C/ Arquitecto Arnau, 61 (Benimaclet)"
+                : "Cita presencial al C/ Arquitecto Arnau, 61 (Benimaclet)"}
             </option>
           </select>
         </div>
@@ -578,20 +578,20 @@ function ContactFormInner({
         <div className="flex flex-wrap gap-1.5 mb-2.5">
           {(locale === "es"
             ? [
-                "Faltan lágrimas de cristal",
-                "Recableado eléctrico seguro",
-                "Manchas o cercos de humedad",
-                "Barniz amarilleado / desgastado",
-                "Holgura en patas o cajones",
-                "Proyecto de interiorismo (B2B)",
+                "Orificios o serrín de carcoma",
+                "Encolado de patas o cajones",
+                "Barniz desgastado / manchas",
+                "Chapa de madera levantada",
+                "Tapicería o rejilla rota",
+                "Encargo de ebanistería a medida",
               ]
             : [
-                "Falten llàgrimes de cristall",
-                "Recablejat elèctric segur",
-                "Taques o cèrcols d'humitat",
-                "Vernís esgrogueït / desgastat",
-                "Joc en potes o calaixos",
-                "Projecte d'interiorisme (B2B)",
+                "Orificis o serradures de corc",
+                "Encolat de potes o calaixos",
+                "Vernís desgastat / taques",
+                "Xapa de fusta alçada",
+                "Tapisseria o reixeta trencada",
+                "Encàrrec d'ebenisteria a mida",
               ]
           ).map((symptom) => (
             <button
@@ -620,7 +620,7 @@ function ContactFormInner({
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Cuéntanos qué mueble o lámpara quieres restaurar (época aproximada, estado actual, si le faltan cristales o necesita recableado, medidas aproximadas)..."
+          placeholder="Cuéntanos qué mueble quieres restaurar (tipo de mueble, estado actual, si presenta carcoma, holgura o desgaste de barniz, medidas aproximadas)..."
           aria-invalid={Boolean(fieldErrors.message)}
           aria-describedby={fieldErrors.message ? "err-message" : undefined}
           className="w-full p-4 rounded-2xl bg-black/40 border border-white/15 text-[#FAF7F2] text-sm placeholder:text-[#78716C] focus:border-[#D4A359] focus:outline-none transition-colors"
@@ -722,8 +722,8 @@ function ContactFormInner({
                 >
                   Política de Privacidad
                 </Link>{" "}
-                para que Ruzafa Vintage gestione mi solicitud de valoración o
-                cita previa. *
+                para que A.C.D. Carlos Soriano gestione mi solicitud de
+                valoración o cita previa. *
               </>
             ) : (
               <>
@@ -734,7 +734,7 @@ function ContactFormInner({
                 >
                   Política de Privacitat
                 </Link>{" "}
-                perquè Ruzafa Vintage gestione la meua sol·licitud. *
+                perquè A.C.D. Carlos Soriano gestione la meua sol·licitud. *
               </>
             )}
           </span>
@@ -882,7 +882,7 @@ export function ContactSection() {
   const directWhatsappUrl = `https://wa.me/${
     BUSINESS_INFO.whatsappNumber
   }?text=${encodeURIComponent(
-    "Hola María José, te escribo desde la web de Ruzafa Vintage para concertar una cita o valorar una pieza."
+    "Hola Carlos, te escribo desde la web de A.C.D. Carlos Soriano para concertar una cita o valorar la restauración de un mueble."
   )}`;
 
   return (
@@ -919,13 +919,13 @@ export function ContactSection() {
               </div>
               <h2 className="font-serif text-3xl sm:text-5xl text-[#FAF7F2] leading-[1.08] tracking-tight">
                 {locale === "es"
-                  ? "Hablemos de tu pieza o concierta una cita en C/ Puerto Rico, 33."
-                  : "Parlem de la teua peça o concerta una cita al C/ Puerto Rico, 33."}
+                  ? "Hablemos de tu mueble o concierta una cita en C/ Arquitecto Arnau, 61."
+                  : "Parlem del teu moble o concerta una cita al C/ Arquitecto Arnau, 61."}
               </h2>
               <p className="text-base text-[#C7BCAE] mt-4 leading-relaxed">
                 {locale === "es"
-                  ? "María José Martínez atiende personalmente cada consulta. Puedes completar la ficha técnica para registrar tu solicitud o enviarnos directamente fotografías por WhatsApp."
-                  : "María José Martínez atén personalment cada consulta. Pots completar la fitxa tècnica o enviar-nos fotografies per WhatsApp."}
+                  ? "Carlos Soriano atiende personalmente cada consulta. Puedes completar la ficha técnica para registrar tu solicitud o enviarnos directamente fotografías por WhatsApp."
+                  : "Carlos Soriano atén personalment cada consulta. Pots completar la fitxa tècnica o enviar-nos fotografies per WhatsApp."}
               </p>
             </div>
 
@@ -953,8 +953,8 @@ export function ContactSection() {
                 </p>
                 <p className="text-xs text-[#C7BCAE] mt-1">
                   {locale === "es"
-                    ? "Ideal para adjuntar 2 o 3 fotos de tu lámpara de araña o mueble y recibir orientación inicial."
-                    : "Ideal per adjuntar 2 o 3 fotos de la teua peça i rebre orientació inicial."}
+                    ? "Ideal para adjuntar 2 o 3 fotos de tu mueble (plano general y detalle) y recibir orientación inicial."
+                    : "Ideal per adjuntar 2 o 3 fotos del teu moble i rebre orientació inicial."}
                 </p>
               </motion.a>
 

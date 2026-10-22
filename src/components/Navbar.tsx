@@ -46,7 +46,7 @@ export function Navbar() {
   ];
 
   const whatsappUrl = `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(
-    "Hola María José, os escribo desde la web de Ruzafa Vintage para consultar sobre una pieza."
+    "Hola Carlos, te escribo desde la web de A.C.D. Carlos Soriano para consultar la restauración de un mueble."
   )}`;
 
   return (
@@ -137,7 +137,7 @@ export function Navbar() {
           <Link
             href="/"
             className="group flex items-center gap-3 focus:outline-none"
-            aria-label="Ruzafa Vintage - Ir al inicio"
+            aria-label="A.C.D. Carlos Soriano - Ir al inicio"
           >
             <motion.div
               whileHover={{ scale: 1.05, rotate: -2 }}
@@ -145,20 +145,20 @@ export function Navbar() {
               className="w-10 h-10 rounded-2xl bg-[#1A1412] text-[#FAF7F2] flex flex-col items-center justify-center shrink-0 shadow-md ring-1 ring-[#D4A359]/30"
             >
               <span className="font-serif text-lg leading-none tracking-wider text-[#D4A359]">
-                RV
+                CS
               </span>
               <span className="font-mono text-[7px] tracking-widest uppercase text-[#C9BFAF] mt-0.5">
-                1950·80
+                A·C·D
               </span>
             </motion.div>
             <div>
               <span className="block font-serif text-xl sm:text-2xl font-semibold tracking-tight text-[#1A1412] leading-none">
-                Ruzafa Vintage
+                A.C.D. Carlos Soriano
               </span>
               <span className="block font-mono text-[10px] uppercase tracking-[0.14em] text-[#A65E2E] font-medium mt-1">
                 {locale === "es"
-                  ? "Atelier · Lámparas & Mid-Century"
-                  : "Atelier · Llums & Mid-Century"}
+                  ? "Restauración · Ebanistería · Antigüedades"
+                  : "Restauració · Ebanisteria · Antiguitats"}
               </span>
             </div>
           </Link>
@@ -200,7 +200,7 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 text-xs font-medium rounded-full bg-white text-[#1A1412] ring-1 ring-[#1A1412]/12 hover:ring-[#2A3C34] shadow-2xs transition-all"
-              aria-label="Consultar por WhatsApp al +34 657 19 12 24"
+              aria-label="Consultar por WhatsApp al +34 670 41 80 08"
             >
               <MessageCircle className="w-3.5 h-3.5 text-[#2A3C34]" aria-hidden="true" />
               <span className="hidden xl:inline">WhatsApp</span>

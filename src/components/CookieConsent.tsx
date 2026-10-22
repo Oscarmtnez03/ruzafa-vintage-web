@@ -154,8 +154,8 @@ export function CookieConsent() {
                 </p>
                 <p className="text-[11px] text-[#57534E] mt-0.5">
                   {locale === "es"
-                    ? "Permite embeber el visor cartográfico de la C/ Puerto Rico, 33 directamente en la página."
-                    : "Permet incrustar el visor cartogràfic del C/ Puerto Rico, 33."}
+                    ? "Permite embeber el visor cartográfico de la C/ Arquitecto Arnau, 61 directamente en la página."
+                    : "Permet incrustar el visor cartogràfic del C/ Arquitecto Arnau, 61."}
                 </p>
               </div>
               <input

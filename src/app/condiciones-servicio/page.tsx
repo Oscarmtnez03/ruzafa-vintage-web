@@ -8,7 +8,7 @@ import { BUSINESS_INFO } from "@/data/business";
 export const metadata: Metadata = {
   title: "Condiciones del Servicio, Presupuestos y Garantías (LGDCU)",
   description:
-    "Condiciones generales de contratación, elaboración de presupuestos, resguardo de depósito, garantías de restauración y hojas de reclamaciones de Ruzafa Vintage (València).",
+    "Condiciones generales de contratación, elaboración de presupuestos, resguardo de depósito, garantías de restauración y hojas de reclamaciones de A.C.D. Carlos Soriano (València).",
   alternates: {
     canonical: "/condiciones-servicio",
   },
@@ -32,7 +32,7 @@ export default function CondicionesServicioPage() {
               href="/"
               className="font-mono text-xs uppercase tracking-wider text-[#9A6B32] hover:underline"
             >
-              ← Volver a Ruzafa Vintage
+              ← Volver a A.C.D. Carlos Soriano
             </Link>
             <h1 className="font-serif text-3xl sm:text-5xl text-[#141210] mt-3">
               Condiciones del Servicio, Presupuestos y Garantías
@@ -87,7 +87,7 @@ export default function CondicionesServicioPage() {
                 del cliente, donde constarán desglosados los trabajos a
                 realizar, el precio total (impuestos incluidos) y el plazo
                 estimado de entrega, entregándose el correspondiente resguardo
-                de depósito de la pieza en el taller de C/ Puerto Rico, 33.
+                de depósito de la pieza en el taller de C/ Arquitecto Arnau, 61.
               </li>
               <li>
                 <strong>Aparición de vicios ocultos durante el desmontaje:</strong>{" "}

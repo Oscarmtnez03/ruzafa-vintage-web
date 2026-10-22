@@ -12,47 +12,47 @@ export function TrustSection() {
   const pillars = [
     {
       icon: ShieldCheck,
-      index: "VERIFICADO · 01",
+      index: "PRESTIGIO · 01",
       accent: "green" as const,
-      titleEs: "Reconocido en la Guía de Artesanía de Cervezas Alhambra",
-      titleVa: "Reconegut en la Guia d'Artesania de Cervezas Alhambra",
+      titleEs: "Autor de los Sillones del Tribunal de las Aguas de Valencia",
+      titleVa: "Autor dels Sillons del Tribunal de les Aigües de València",
       descEs:
-        "Destacado como taller referente en el barrio de Ruzafa por preservar el oficio manual de recuperación de lámparas de araña y mobiliario de las décadas de 1950 a 1980.",
+        "Reconocido en Valencia por la elaboración artesanal de los sillones institucionales del histórico Tribunal de las Aguas, garantía del más alto nivel en ebanistería y talla.",
       descVa:
-        "Destacat com a taller referent al barri de Russafa per preservar l'ofici manual de recuperació de llums d'aranya i mobiliari de les dècades de 1950 a 1980.",
+        "Reconegut a València per l'elaboració artesanal dels sillons institucionals de l'històric Tribunal de les Aigües.",
     },
     {
       icon: Wrench,
       index: "OFICIO · 02",
       accent: "teak" as const,
-      titleEs: "Intervención Directa por María José Martínez",
-      titleVa: "Intervenció Directa per María José Martínez",
+      titleEs: "Intervención Personal por el Maestro Carlos Soriano",
+      titleVa: "Intervenció Personal pel Mestre Carlos Soriano",
       descEs:
-        "Sin intermediarios comerciales ni subcontratas industriales. Cada pieza es diagnosticada, desmontada y restaurada personalmente en el taller con técnicas respetuosas.",
+        "Sin intermediarios. Cada mueble o antigüedad es diagnosticado y restaurado en nuestro propio taller aplicando goma-laca a muñequilla, colas tradicionales y ceras naturales.",
       descVa:
-        "Sense intermediaris comercials ni subcontractes industrials. Cada peça és diagnosticada, desmuntada i restaurada personalment al taller.",
+        "Sense intermediaris. Cada moble o antiguitat és diagnosticat i restaurat al nostre taller aplicant goma-laca a monyeca i ceres naturals.",
     },
     {
       icon: Compass,
-      index: "ESPECIALIDAD · 03",
+      index: "INTEGRAL · 03",
       accent: "teak" as const,
-      titleEs: "Doble Especialización: Luminarias Históricas y Mid-Century",
-      titleVa: "Doble Especialització: Lluminàries Històriques i Mid-Century",
+      titleEs: "Ebanistería, Eliminación de Carcoma y Tapicería en un Solo Taller",
+      titleVa: "Ebanisteria, Eliminació de Corc i Tapisseria en un Sol Taller",
       descEs:
-        "Pocos talleres en Valencia combinan la ebanistería fina de los años 50–80 con la restauración y electrificación completa de lámparas de araña de cristal y bronce.",
+        "Resolvemos todas las patologías de tu mueble sin subcontratar fuera: carpintería estructural, fumigación curativa antixilófagos, tapizado tradicional y tejido de rejilla.",
       descVa:
-        "Pocs tallers a València combinen l'ebanisteria fina dels anys 50–80 amb la restauració i electrificació completa de llums d'aranya de cristall i bronze.",
+        "Resolem totes les patologies del teu moble: fusteria estructural, fumigació curativa antixilòfags, tapissat tradicional i reixeta.",
     },
     {
       icon: Building2,
       index: "PROXIMIDAD · 04",
       accent: "green" as const,
-      titleEs: "Taller Físico en Carrer de Puerto Rico, 33 (Ruzafa)",
-      titleVa: "Taller Físic al Carrer de Puerto Rico, 33 (Russafa)",
+      titleEs: "Taller Físico en Calle Arquitecto Arnau, 61 (Benimaclet)",
+      titleVa: "Taller Físic al Carrer Arquitecte Arnau, 61 (Benimaclet)",
       descEs:
-        "Ubicación real a pie de calle en el código postal 46006 de València. Atendemos con cita previa a vecinos del Eixample, Ciutat Vella, toda Valencia y estudios de interiorismo.",
+        "Ubicación real a pie de calle en el código postal 46020 de València, con servicio de recogida y entrega a domicilio en toda Valencia capital y área metropolitana.",
       descVa:
-        "Ubicació real a peu de carrer al codi postal 46006 de València. Atenem amb cita prèvia a veïns de l'Eixample, Ciutat Vella, tota València i interioristes.",
+        "Ubicació real a peu de carrer al codi postal 46020 de València, amb servei de recollida i lliurament a tota València i àrea metropolitana.",
     },
   ];
 
@@ -76,13 +76,13 @@ export function TrustSection() {
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#A65E2E] font-semibold">
               {locale === "es"
-                ? "TRAYECTORIA Y DATOS VERIFICABLES"
-                : "TRAJECTÒRIA I DADES VERIFICABLES"}
+                ? "MAESTRÍA EBANISTA Y DATOS VERIFICABLES"
+                : "MESTRIA EBANISTA I DADES VERIFICABLES"}
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#1A1412] mt-1.5 tracking-tight">
               {locale === "es"
-                ? "Un taller con nombre propio, dirección real y oficio contrastado en Valencia."
-                : "Un taller amb nom propi, adreça real i ofici contrastat a València."}
+                ? "Un taller maestro con prestigio histórico, dirección real y oficio completo en Valencia."
+                : "Un taller mestre amb prestigi històric, adreça real i ofici complet a València."}
             </h2>
           </div>
           <p className="font-mono text-xs text-[#2A3C34] font-medium px-4 py-2 rounded-full bg-[#E6ECE8] ring-1 ring-[#2A3C34]/20 self-start md:self-auto">

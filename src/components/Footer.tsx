@@ -17,7 +17,7 @@ export function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl border border-[#D4A66A] bg-[#181512] flex items-center justify-center">
-                <span className="font-serif text-base text-[#D4A66A]">RV</span>
+                <span className="font-serif text-base text-[#D4A66A]">CS</span>
               </div>
               <div>
                 <span className="block font-serif text-xl text-[#F7F4EE]">
@@ -31,8 +31,8 @@ export function Footer() {
 
             <p className="text-sm leading-relaxed text-[#A89F91]">
               {locale === "es"
-                ? "Taller artesanal de restauración de muebles de los años 50, 60, 70 y 80 y recuperación integral de lámparas de araña clásicas en el barrio de Ruzafa, València."
-                : "Taller artesanal de restauració de mobles dels anys 50, 60, 70 i 80 i recuperació integral de llums d'aranya clàssics al barri de Russafa, València."}
+                ? "Taller de restauración de muebles antiguos y clásicos, ebanistería artesanal, tratamientos anticarcoma y tapicería tradicional en el barrio de Benimaclet, València."
+                : "Taller de restauració de mobles antics i clàssics, ebenisteria artesanal, tractaments anticorc i tapisseria tradicional al barri de Benimaclet, València."}
             </p>
 
             <p className="text-xs font-mono text-[#8C8275]">
@@ -94,8 +94,8 @@ export function Footer() {
                   className="hover:text-[#D4A66A] transition-colors"
                 >
                   {locale === "es"
-                    ? "Taller en Ruzafa y Cobertura"
-                    : "Taller a Russafa i Cobertura"}
+                    ? "Taller en Benimaclet y Cobertura"
+                    : "Taller a Benimaclet i Cobertura"}
                 </Link>
               </li>
               <li>

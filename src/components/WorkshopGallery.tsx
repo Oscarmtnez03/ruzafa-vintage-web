@@ -244,8 +244,8 @@ export function WorkshopGallery() {
           />
           <p>
             {locale === "es"
-              ? "Transparencia editorial: Las fichas siguientes documentan las metodologías reales aplicadas en Ruzafa Vintage (C/ Puerto Rico, 33) acompañadas de fotografías ilustrativas de referencia técnica para cada tipología de mueble y luminaria."
-              : "Transparència editorial: Les fitxes següents documenten les metodologies reals aplicades a Ruzafa Vintage (C/ Puerto Rico, 33) acompanyades de fotografies il·lustratives de referència tècnica."}
+              ? "Transparencia editorial: Las fichas siguientes documentan las metodologías reales aplicadas en A.C.D. Carlos Soriano (C/ Arquitecto Arnau, 61, Benimaclet) acompañadas de fotografías ilustrativas de referencia técnica para cada tipología de mueble y sillería."
+              : "Transparència editorial: Les fitxes següents documenten les metodologies reals aplicades a A.C.D. Carlos Soriano (C/ Arquitecte Arnau, 61) acompanyades de fotografies il·lustratives de referència tècnica."}
           </p>
         </div>
 
@@ -324,8 +324,8 @@ export function WorkshopGallery() {
                         <div className="p-4 rounded-2xl bg-[#F3EAD8]/55 border-l-4 border-[#9A6B32]">
                           <span className="font-mono text-[10px] uppercase tracking-wider text-[#9A6B32] font-semibold block mb-1">
                             {locale === "es"
-                              ? "Intervención Artesanal en Ruzafa Vintage:"
-                              : "Intervenció Artesanal a Ruzafa Vintage:"}
+                              ? "Intervención Artesanal en A.C.D. Carlos Soriano:"
+                              : "Intervenció Artesanal a A.C.D. Carlos Soriano:"}
                           </span>
                           <p className="text-[#141210] leading-relaxed">
                             {intervention}
