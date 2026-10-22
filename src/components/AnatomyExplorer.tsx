@@ -25,7 +25,7 @@ interface HotspotItem {
 }
 
 interface BlueprintModel {
-  id: "arana" | "credenza";
+  id: "sillon" | "credenza";
   tabEs: string;
   tabVa: string;
   subtitleEs: string;
@@ -37,112 +37,112 @@ interface BlueprintModel {
 
 const BLUEPRINTS: BlueprintModel[] = [
   {
-    id: "arana",
-    tabEs: "Anatomía: Lámpara de Araña",
-    tabVa: "Anatomia: Llum d'Aranya",
+    id: "sillon",
+    tabEs: "Anatomía: Sillón Histórico y Talla",
+    tabVa: "Anatomia: Silló Històric i Talla",
     subtitleEs:
-      "Pulsa sobre los 5 puntos críticos de una luminaria histórica para ver cómo intervenimos cada elemento en el taller.",
+      "Pulsa sobre los 5 puntos críticos de un sillón clásico o histórico en nogal para ver cómo intervenimos cada elemento en el taller.",
     subtitleVa:
-      "Prem sobre els 5 punts crítics d'una lluminària històrica per veure com intervenim cada element al taller.",
+      "Prem sobre els 5 punts crítics d'un silló clàssic o històric en noguera per veure com intervenim cada element al taller.",
     image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=85",
     imageAlt:
-      "Radiografía técnica de restauración de una lámpara de araña de bronce y cristal tallado",
+      "Radiografía técnica de restauración de un sillón clásico de ebanistería y tapizado artesanal",
     hotspots: [
       {
-        id: "floron-cadena",
+        id: "copete-talla",
         number: "01",
         x: "50%",
-        y: "16%",
-        partEs: "Florón superior, tija central y cadena de suspensión",
-        partVa: "Floró superior, tija central i cadena de suspensió",
+        y: "18%",
+        partEs: "Copete superior, molduras y talla manual en nogal",
+        partVa: "Copet superior, motlures i talla manual en noguera",
         pathologyEs:
-          "Desgaste mecánico en eslabones de carga, ausencia de toma de tierra y oxidación acumulada por condensación en techos altos.",
+          "Fracturas o pérdidas de relieve en la talla ornamental por golpes antiguos, acumulación de ceras oxidadas en las hendiduras y barniz oscurecido.",
         pathologyVa:
-          "Desgast mecànic en baules de càrrega, absència de presa de terra i oxidació acumulada en sostres alts.",
+          "Fractures o pèrdues de relleu en la talla ornamental i acumulació de ceres oxidades.",
         techniqueEs:
-          "Verificación de resistencia estructural del anclaje, limpieza de bronce sin ácidos abrasivos e incorporación de conductor de protección (tierra) hasta el techo.",
+          "Limpieza minuciosa del relieve sin erosionar la arista de la talla, reconstrucción manual con gubia en madera de nogal curada y acabado a muñequilla con goma-laca.",
         techniqueVa:
-          "Verificació de resistència estructural de l'ancoratge, neteja del bronze i incorporació de presa de terra.",
+          "Neteja minuciosa del relleu, reconstrucció manual amb gúbia en fusta de noguera i acabat a monyeca.",
       },
       {
-        id: "circuito-electrico",
+        id: "brazos-espigas",
         number: "02",
-        x: "34%",
-        y: "42%",
-        partEs: "Cableado interior por el interior de los brazos de bronce",
-        partVa: "Cablejat interior pels braços de bronze",
+        x: "32%",
+        y: "44%",
+        partEs: "Apoyabrazos torneados y ensambles de caja y espiga",
+        partVa: "Reposabraços tornejats i ensambles de caixa i espiga",
         pathologyEs:
-          "Cables originales de algodón o plástico rígido de los años 50–70 con el aislamiento cuarteado, provocando saltos del diferencial o cortocircuitos.",
+          "Holgura estructural en la unión de los brazos con el respaldo y desgaste total del barniz por el roce continuado de las manos durante décadas.",
         pathologyVa:
-          "Cables originals de cotó o plàstic rígid dels anys 50–70 amb l'aïllament clivellat, provocant curtcircuits.",
+          "Folgança estructural en la unió dels braços amb el respatler i desgast del vernís pel frec de les mans.",
         techniqueEs:
-          "Sustitución completa del circuito interno mediante cableado nuevo de doble aislamiento o trenzado textil homologado, con empalmes internos termosellados en la copa central.",
+          "Desmontaje numerado, retirada de colas cristalizadas, ajuste con espigas de madera dura encoladas en prensa y regeneración de pátina sedosa.",
         techniqueVa:
-          "Substitució completa del circuit intern mitjançant cablejat nou de doble aïllament amb empalmaments termosellats.",
+          "Desmuntatge numerat, ajust amb espigues de fusta dura encolades en premsa i regeneració de pàtina.",
       },
       {
-        id: "portalamparas-velas",
+        id: "tapiceria-cinchas",
         number: "03",
-        x: "68%",
-        y: "46%",
-        partEs: "Portalámparas E14/E27, platillos y fundas de vela",
-        partVa: "Portalàmpades E14/E27, platets i fundes de ciri",
+        x: "66%",
+        y: "48%",
+        partEs: "Respaldo y asiento: tapicería tradicional o rejilla (cannage)",
+        partVa: "Respatler i seient: tapisseria tradicional o reixeta (cannage)",
         pathologyEs:
-          "Casquillos sulfatados que hacen falso contacto, fundas de cartón o plástico quemadas por bombillas incandescentes antiguas y platillos de cristal lascados.",
+          "Cinchas de yute destensadas, muelles vencidos, tejido de rejilla vegetal perforado o tapicería histórica desgastada con tachuelas oxidadas.",
         pathologyVa:
-          "Casquets sulfatats que fan fals contacte i fundes cremades per bombetes antigues.",
+          "Cingles de jute destensades, molles vençudes o teixit de reixeta vegetal perforat.",
         techniqueEs:
-          "Instalación de portalámparas cerámicos o metálicos nuevos, sustitución de fundas imitación cera envejecida a medida y nivelado geométrico de todos los brazos.",
+          "Cinchado tradicional entrelazado, atado manual de muelles de acero, tejido artesanal de rejilla de ratán o tapizado con tela/piel y claveteado visto.",
         techniqueVa:
-          "Instal·lació de portalàmpades nous, substitució de fundes imitació cera envellida i anivellat dels braços.",
+          "Cinglat tradicional entrellaçat, lligat manual de molles, teixit artesanal de reixeta o tapissat clàssic.",
       },
       {
-        id: "engarce-cristal",
+        id: "faldones-carcoma",
         number: "04",
         x: "46%",
-        y: "66%",
-        partEs: "Rosetas, octógonos y cadenas de cristal tallado",
-        partVa: "Rosetes, octògons i cadenes de cristall tallat",
+        y: "68%",
+        partEs: "Faldón perimetral, travesaños y sanidad antixilófagos",
+        partVa: "Faldó perimetral, travessers i sanitat antixilòfags",
         pathologyEs:
-          "Alambres de hierro o latón oxidados que se parten al mínimo roce, dejando caer lágrimas de cristal, y opacidad por grasa ambiental acumulada.",
+          "Ataque activo o latente de carcoma (Anobium punctatum) en las zonas internas no barnizadas del bastidor, debilitando la fibra de la madera.",
         pathologyVa:
-          "Filferros oxidats que es trenquen al mínim frec i opacitat acumulada al cristall.",
+          "Atac actiu o latent de corc a les zones internes del bastidor, debilitant la fibra de la fusta.",
         techniqueEs:
-          "Desmontaje documentado, lavado óptico individual pieza a pieza y re-engarzado íntegro a mano utilizando alambre de latón o bronce de calibre exacto.",
+          "Fumigación curativa profunda por inyección e impregnación, consolidación interna de galerías con resinas reversibles y estucado invisible con ceras al tono.",
         techniqueVa:
-          "Desmuntatge documentat, rentat òptic peça a peça i re-engalzat íntegre a mà amb filferro de llautó o bronze.",
+          "Fumigació curativa profunda per injecció, consolidació interna de galeries i estucat invisible amb ceres.",
       },
       {
-        id: "lagrimas-bola",
+        id: "patas-chambrana",
         number: "05",
         x: "53%",
         y: "84%",
-        partEs: "Almendras, prismas, dagas y bola facetada inferior",
-        partVa: "Ametles, prismes, dagues i bola facetada inferior",
+        partEs: "Patas cabriolé o torneadas, chambranas e injertos de base",
+        partVa: "Potes cabriolé o tornejades, xambranes i empelts de base",
         pathologyEs:
-          "Pérdida de piezas originales tras mudanzas o limpiezas previas, rompiendo la simetría y el juego de refracción de la lámpara.",
+          "Desgaste, astillado o pudrición por humedad capilar del suelo en los últimos centímetros de las patas, provocando cojera e inestabilidad.",
         pathologyVa:
-          "Pèrdua de peces originals després de mudances, trencant la simetria del llum.",
+          "Desgast o deteriorament per humitat del sòl als últims centímetres de les potes, provocant coixesa.",
         techniqueEs:
-          "Reposición de lágrimas, almendras, octógonos o bolas facetadas empleando recambios de cristal tallado de época equivalentes en talla y plomo.",
+          "Injerto estructural en madera maciza de la misma especie, nivelación geométrica sobre mármol de taller y protección inferior hidrófuga con cera virgen.",
         techniqueVa:
-          "Reposició de llàgrimes, ametles o boles facetades emprant recanvis de cristall tallat d'època.",
+          "Empelt estructural en fusta massissa de la mateixa espècie, anivellació geomètrica i protecció amb cera.",
       },
     ],
   },
   {
     id: "credenza",
-    tabEs: "Anatomía: Credenza Años 60",
-    tabVa: "Anatomia: Credença Anys 60",
+    tabEs: "Anatomía: Cómoda y Aparador Antiguo",
+    tabVa: "Anatomia: Còmoda i Aparador Antic",
     subtitleEs:
-      "Explora los 5 puntos de intervención ebanista sobre un aparador mid-century de madera de teca o nogal.",
+      "Explora los 5 puntos de intervención ebanista sobre una cómoda, consola o aparador de madera noble y marquetería.",
     subtitleVa:
-      "Explora els 5 punts d'intervenció ebanista sobre un aparador mid-century de fusta de teca o noguera.",
+      "Explora els 5 punts d'intervenció ebanista sobre una còmoda, consola o aparador de fusta noble i marqueteria.",
     image:
       "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85",
     imageAlt:
-      "Radiografía técnica de restauración de un aparador mid-century de los años 60",
+      "Radiografía técnica de restauración de una cómoda o aparador de madera noble",
     hotspots: [
       {
         id: "sobre-teca",
@@ -251,25 +251,25 @@ const FINISH_SWATCHES = [
     useVa: "Nutrició i protecció amb pàtina mat vellutada",
   },
   {
-    nameEs: "Bronce y Latón Estabilizado",
-    nameVa: "Bronze i Llautó Estabilitzat",
+    nameEs: "Bronce, Latón y Herrajes de Época",
+    nameVa: "Bronze, Llautó i Ferratges d'Època",
     tone: "linear-gradient(135deg, #7A5C29 0%, #D4AF6A 50%, #59411A 100%)",
-    useEs: "Lámparas de araña, apliques, bocallaves y virolas mid-century",
-    useVa: "Llums d'aranya, aplics i ferratges mid-century",
+    useEs: "Bocallaves, tiradores, bisagras, fallebas y ornamentos de bronce limpios y estabilizados",
+    useVa: "Panys, tiradors, frontisses i ornaments de bronze estabilitzats",
   },
   {
-    nameEs: "Pátina Mineral Verde Salvia / Piedra",
-    nameVa: "Pàtina Mineral Verd Sàlvia / Pedra",
+    nameEs: "Tinte de Nogalina y Pátinas",
+    nameVa: "Tint de Nogalina i Pàtines",
     tone: "linear-gradient(135deg, #5F6B5E 0%, #869484 55%, #465045 100%)",
-    useEs: "Reciclaje creativo de alacenas y vitrinas en combinación con madera vista",
-    useVa: "Reciclatge creatiu d'armaris i vitrines",
+    useEs: "Igualación cromática de injertos de ebanistería y pátinas decorativas tradicionales",
+    useVa: "Igualació cromàtica d'empelts d'ebanisteria i pàtines tradicionals",
   },
 ];
 
 export function AnatomyExplorer() {
   const { locale, triggerPrefillAndScroll } = useLanguage();
-  const [activeModelId, setActiveModelId] = useState<"arana" | "credenza">(
-    "arana"
+  const [activeModelId, setActiveModelId] = useState<"sillon" | "credenza">(
+    "sillon"
   );
   const [activeHotspotIndex, setActiveHotspotIndex] = useState<number>(0);
 
@@ -278,7 +278,7 @@ export function AnatomyExplorer() {
   const currentHotspot =
     currentModel.hotspots[activeHotspotIndex] || currentModel.hotspots[0];
 
-  const handleModelSwitch = (id: "arana" | "credenza") => {
+  const handleModelSwitch = (id: "sillon" | "credenza") => {
     setActiveModelId(id);
     setActiveHotspotIndex(0);
   };
@@ -501,9 +501,9 @@ export function AnatomyExplorer() {
                     onClick={() =>
                       triggerPrefillAndScroll({
                         pieceType:
-                          activeModelId === "arana"
-                            ? "Lámpara de araña / Luminaria histórica"
-                            : "Aparador / Credenza / Mueble Años 50–80",
+                          activeModelId === "sillon"
+                            ? "Sillería / Sillón histórico / Talla en madera"
+                            : "Cómoda / Aparador / Mueble antiguo",
                         interventionScope:
                           locale === "es"
                             ? currentHotspot.partEs
@@ -605,18 +605,18 @@ export function AnatomyExplorer() {
             <div className="p-4 rounded-2xl bg-[#E6ECE8]/70 space-y-1">
               <span className="font-mono uppercase text-[10px] text-[#2A3C34] font-semibold block">
                 {locale === "es"
-                  ? "02 · Ambiente Salino y Oxidación del Bronce"
-                  : "02 · Ambient Salí i Oxidació del Bronze"}
+                  ? "02 · Prevención frente a Carcoma en Clima Templado"
+                  : "02 · Prevenció enfront de Corc en Clima Temperat"}
               </span>
               <p className="text-[#1A1412] font-medium">
                 {locale === "es"
-                  ? "Protección antioxidante en lámparas de araña"
-                  : "Protecció antioxidant en llums d'aranya"}
+                  ? "Barrera protectora contra insectos xilófagos"
+                  : "Barrera protectora contra insectes xilòfags"}
               </p>
               <p className="text-[#5C5149] leading-relaxed">
                 {locale === "es"
-                  ? "Tras limpiar el bronce o latón y sustituir los alambres de engarce oxidados por hilo de latón nuevo, aplicamos una película microcristalina invisible que frena el oscurecimiento."
-                  : "Després de netejar el bronze i substituir els filferros per llautó nou, apliquem una protecció microcristal·lina que frena l'enfosquiment."}
+                  ? "Las temperaturas suaves de Valencia favorecen el ciclo de la carcoma en maderas de nogal, haya o pino. En cada restauración aplicamos protección preventiva en traseras e interiores."
+                  : "Les temperatures suaus de València afavoreixen el cicle del corc. En cada restauració apliquem protecció preventiva en traseres i interiors."}
               </p>
             </div>
 

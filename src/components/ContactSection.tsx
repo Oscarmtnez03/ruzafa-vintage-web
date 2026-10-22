@@ -132,8 +132,8 @@ function ContactFormInner({
     if (pieceType.trim().length < 2) {
       errs.pieceType =
         locale === "es"
-          ? "Indica el tipo de mueble o lámpara a valorar."
-          : "Indica el tipus de moble o llum a valorar.";
+          ? "Indica el tipo de mueble o encargo a valorar."
+          : "Indica el tipus de moble o encàrrec a valorar.";
     }
     if (message.trim().length < 10) {
       errs.message =

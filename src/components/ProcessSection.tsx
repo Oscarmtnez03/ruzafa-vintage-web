@@ -203,8 +203,8 @@ export function ProcessSection() {
             </h3>
             <p className="text-sm sm:text-base text-[#44403C] leading-relaxed max-w-3xl">
               {locale === "es"
-                ? "Colaboramos con estudios de arquitectura, decoradores y proyectos contract en Valencia para recuperar las lámparas de araña originales de pisos señoriales, adaptar el acabado de piezas heredadas a la nueva paleta de la obra o localizar mobiliario auténtico de los años 50, 60, 70 y 80 bajo plazos de entrega coordinados con obra."
-                : "Col·laborem amb estudis d'arquitectura i interioristes a València per recuperar els llums d'aranya originals de pisos senyorials o localitzar mobiliari autèntic dels anys 50 a 80."}
+                ? "Colaboramos con estudios de arquitectura, decoradores, instituciones y coleccionistas en Valencia para restaurar mobiliario histórico, fabricar piezas de ebanistería y talla a medida, tratar maderas contra carcoma o recuperar sillería clásica bajo plazos coordinados con obra."
+                : "Col·laborem amb estudis d'arquitectura, interioristes i institucions a València per restaurar mobiliari històric, fabricar peces d'ebanisteria a mida o recuperar cadirat clàssic."}
             </p>
           </div>
 
@@ -214,11 +214,11 @@ export function ProcessSection() {
               onClick={() =>
                 triggerPrefillAndScroll({
                   pieceType:
-                    "Colaboración Profesional · Estudio de Arquitectura / Interiorismo",
+                    "Colaboración Profesional · Estudio de Arquitectura / Interiorismo / Institución",
                   decadeOrMaterial:
-                    "Restauración de pieza en obra o búsqueda (Sourcing) años 50–80",
+                    "Restauración de mobiliario histórico o ebanistería a medida",
                   interventionScope:
-                    "Atención a proyecto de interiorismo en Valencia",
+                    "Atención a proyecto profesional en Valencia",
                   notes:
                     "Hola Carlos, somos un estudio de arquitectura/interiorismo en Valencia y nos gustaría comentar un proyecto de restauración o ebanistería con vuestro taller.",
                 })

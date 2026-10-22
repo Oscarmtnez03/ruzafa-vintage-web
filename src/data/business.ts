@@ -162,32 +162,32 @@ export const SERVICES: ServiceItem[] = [
       "Hola Carlos, he detectado marcas de carcoma en un mueble y me gustaría consultar el tratamiento en vuestro taller.",
   },
   {
-    id: "tapiceria-rejilla-luminarias",
+    id: "tapiceria-rejilla-acabados",
     number: "04",
-    titleEs: "Tapicería Artesanal, Rejilla Clásica (Cannage) y Lámparas de Época",
-    titleVa: "Tapissat Artesanal, Reixeta Clàssica (Cannage) i Llums d'Època",
-    subtitleEs: "Retapizado tradicional con muelles y cinchas, tejido de rejilla y recuperación de bronce/cristal",
-    subtitleVa: "Retapissat tradicional amb molles i cingles, teixit de reixeta i recuperació de llums",
+    titleEs: "Tapicería Artesanal, Rejilla Clásica (Cannage) y Dorados",
+    titleVa: "Tapissat Artesanal, Reixeta Clàssica (Cannage) i Daurats",
+    subtitleEs: "Retapizado tradicional con muelles y cinchas, tejido de rejilla a mano y restauración de marcos",
+    subtitleVa: "Retapissat tradicional amb molles i cingles, teixit de reixeta i restauració de marcs",
     descriptionEs:
-      "Completamos la restauración integral de tus piezas sin que tengas que acudir a varios talleres: retapizamos butacas, descalzadoras, sillas de comedor y sofás clásicos tras restaurar su madera, tejemos rejilla vegetal a mano y restauramos lámparas de araña de bronce y cristal.",
+      "Completamos la restauración integral de tus piezas sin que tengas que acudir a varios talleres: retapizamos butacas, descalzadoras, sillas de comedor y sofás clásicos tras restaurar y encolar su madera, tejemos rejilla vegetal a mano y restauramos espejos y marcos dorados.",
     descriptionVa:
-      "Completem la restauració integral de les teues peces: retapissem butaques, cadires de menjador i sofàs clàssics després de restaurar la fusta, teixim reixeta a mà i restaurem llums d'aranya.",
+      "Completem la restauració integral de les teues peces: retapissem butaques, cadires de menjador i sofàs clàssics després de restaurar la fusta, teixim reixeta a mà i restaurem marcs daurats.",
     deliverablesEs: [
       "Retapizado artesanal completo (cinchado de yute, muelles atados a mano, crin o espuma HR)",
       "Tejido manual de rejilla de ratán natural (cannage) en respaldos y asientos tipo Thonet",
-      "Limpieza de bronce, reposición de lágrimas de cristal y recableado de lámparas clásicas",
+      "Reintegración de estuco, pan de oro, pátinas y herrajes de bronce en espejos y consolas",
       "Recogida y entrega coordinada en toda Valencia capital y área metropolitana",
     ],
     deliverablesVa: [
       "Retapissat artesanal complet (cinglat, molles lligades a mà i teles d'alta resistència)",
       "Teixit manual de reixeta de ratan natural en respatlers i seients",
-      "Neteja de bronze, reposició de cristalls i recablejat de llums clàssics",
+      "Reintegració d'estuc, pa d'or, pàtines i ferratges de bronze en miralls i consoles",
       "Recollida i lliurament coordinat a tota València capital i àrea metropolitana",
     ],
     typicalPiecesEs:
-      "Butacas orejeras, sillas Thonet o Cesca de rejilla, tresillos clásicos, banquetas de piano y lámparas de techo antiguas.",
+      "Butacas orejeras, sillas Thonet o Cesca de rejilla, tresillos clásicos, banquetas de piano, descalzadoras y marcos de época.",
     typicalPiecesVa:
-      "Butaques, cadires de reixeta, sofàs clàssics, banquetes de piano i llums de sostre antics.",
+      "Butaques, cadires de reixeta, sofàs clàssics, banquetes de piano, descalçadores i marcs d'època.",
     whatsappPrefill:
       "Hola Carlos, quiero valorar la restauración y retapizado / rejilla de unas sillas o butacas en vuestro taller.",
   },
@@ -196,7 +196,7 @@ export const SERVICES: ServiceItem[] = [
 export interface CaseStudyItem {
   id: string;
   code: string;
-  category: "lamparas" | "midcentury" | "personalizacion" | "interiorismo";
+  category: "ebanisteria" | "mobiliario" | "carcoma" | "tapiceria";
   decade: string;
   titleEs: string;
   titleVa: string;
@@ -217,7 +217,7 @@ export const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: "sillones-institucionales-ebanisteria",
     code: "ESP-01 · EBANISTERÍA Y TALLA",
-    category: "midcentury",
+    category: "ebanisteria",
     decade: "Oficio Maestro",
     titleEs: "Ebanistería Histórica, Consolidación y Acabado a Muñequilla en Sillería de Nogal",
     titleVa: "Ebanisteria Històrica, Consolidació i Acabat a Monyeca en Cadirat de Noguera",
@@ -243,10 +243,10 @@ export const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: "aparador-credenza-madera-noble",
     code: "ESP-02 · MOBILIARIO Y MARQUETERÍA",
-    category: "midcentury",
+    category: "mobiliario",
     decade: "Siglo XIX · XX",
-    titleEs: "Restauración Integral de Cómoda y Aparador en Madera de Nogal, Caoba y Teca",
-    titleVa: "Restauració Integral de Còmoda i Aparador en Fusta de Noguera, Caoba i Teca",
+    titleEs: "Restauración Integral de Cómoda, Consola y Aparador en Nogal y Caoba",
+    titleVa: "Restauració Integral de Còmoda, Consola i Aparador en Noguera i Caoba",
     originEs: "Intervención habitual en el taller de C/ Arquitecto Arnau, 61 (Benimaclet, València)",
     originVa: "Intervenció habitual al taller del C/ Arquitecte Arnau, 61 (Benimaclet, València)",
     pathologyEs:
@@ -257,7 +257,7 @@ export const CASE_STUDIES: CaseStudyItem[] = [
       "Retirada manual del barniz oxidado respetando la pátina de la madera, injertos milimétricos de chapa, recrecido de guías de cajonera en haya maciza y nutrición profunda con goma-laca o ceras naturales.",
     interventionVa:
       "Retirada manual del vernís oxidat respectant la pàtina, empelts de xapa, ajust de calaixera i nutrició profunda.",
-    materialsEs: ["Chapa de nogal y teca", "Goma-laca descerada", "Cera de abeja y carnauba", "Bronce limpio"],
+    materialsEs: ["Chapa de nogal y caoba", "Goma-laca descerada", "Cera de abeja y carnauba", "Herrajes de bronce"],
     estimatedTimeEs: "3 a 4 semanas en taller",
     imageUrl:
       "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85",
@@ -268,7 +268,7 @@ export const CASE_STUDIES: CaseStudyItem[] = [
   {
     id: "sanidad-madera-carcoma-talla",
     code: "ESP-03 · SANIDAD DE LA MADERA",
-    category: "personalizacion",
+    category: "carcoma",
     decade: "Antigüedades",
     titleEs: "Erradicación de Carcoma, Consolidación Interna y Recuperación de Herrajes",
     titleVa: "Eradicació de Corc, Consolidació Interna i Recuperació de Ferratges",
@@ -291,29 +291,29 @@ export const CASE_STUDIES: CaseStudyItem[] = [
       "Fotografía ilustrativa de referencia · Especialidad en fumigación, consolidación y ebanistería tradicional.",
   },
   {
-    id: "luminaria-bronce-cristal-epoca",
-    code: "ESP-04 · BRONCE Y LUMINARIAS",
-    category: "lamparas",
-    decade: "Clásico · S. XX",
-    titleEs: "Restauración de Lámparas de Araña, Bronces, Espejos Dorados y Piezas Singulares",
-    titleVa: "Restauració de Llums d'Aranya, Bronzes, Miralls Daurats i Peces Singulars",
-    originEs: "Conservación integral de piezas decorativas para hogares de Valencia",
-    originVa: "Conservació integral de peces decoratives per a llars de València",
+    id: "tapiceria-rejilla-silleria-clasica",
+    code: "ESP-04 · TAPICERÍA Y REJILLA",
+    category: "tapiceria",
+    decade: "Clásico · S. XIX–XX",
+    titleEs: "Retapizado Tradicional de Butacas y Tejido Artesanal de Rejilla (Cannage)",
+    titleVa: "Retapissat Tradicional de Butaques i Teixit Artesanal de Reixeta (Cannage)",
+    originEs: "Recuperación integral de sillería y asientos de época en Benimaclet",
+    originVa: "Recuperació integral de cadirat i seients d'època a Benimaclet",
     pathologyEs:
-      "Oxidación en estructuras de bronce y latón, marcos con faltas de estuco o pan de oro, cableado antiguo deteriorado y desprendimiento de lágrimas de cristal.",
+      "Hundimiento de cinchas y muelles antiguos, rotura del tejido de rejilla vegetal en asientos o respaldos, y desencolado del bastidor de madera.",
     pathologyVa:
-      "Oxidació en estructures de bronze i llautó, marcs amb faltes d'estuc i cablejat antic deteriorat.",
+      "Enfonsament de cingles i molles antigues, trencament del teixit de reixeta vegetal i desencolat del bastidor.",
     interventionEs:
-      "Desmontaje y limpieza antioxidante controlada de metales nobles, reintegración de molduras y dorados en marcos históricos, reposición de cristales y renovación eléctrica segura.",
+      "Encolado previo del armazón en prensa, colocación de cinchas de yute entrelazadas y muelles biconos atados a mano, tejido manual hebra a hebra de rejilla de ratán natural y acabado en tela o piel con tachuela clásica.",
     interventionVa:
-      "Desmuntatge i neteja controlada de metalls nobles, reintegració de motlures i renovació elèctrica segura.",
-    materialsEs: ["Bronce fundido", "Cristal tallado", "Pan de oro / pátina", "Cableado homologado"],
+      "Encolat previ de l'armadura, col·locació de cingles de jute i molles lligades a mà, teixit manual de reixeta i acabat en tela o pell.",
+    materialsEs: ["Rejilla de ratán natural", "Cinchas de yute y muelles", "Madera de haya y nogal", "Tachuela / Pasamanería"],
     estimatedTimeEs: "2 a 3 semanas en taller",
     imageUrl:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1200&q=85",
-    imageAltEs: "Detalle de lámpara clásica de bronce y cristal restaurada",
+      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=1200&q=85",
+    imageAltEs: "Silla clásica de madera curvada y rejilla restaurada artesanalmente",
     imageCaptionEs:
-      "Fotografía ilustrativa de referencia · Conservación de lámparas clásicas, marcos y antigüedades.",
+      "Fotografía ilustrativa de referencia · Tapicería clásica y rejilla artesanal en el taller de Benimaclet.",
   },
 ];
 
@@ -393,7 +393,7 @@ export const FAQS = [
     questionEs: "¿Cómo se gestiona la recogida y entrega si el mueble es grande y vivo en Valencia o alrededores?",
     questionVa: "Com es gestiona la recollida i lliurament si el moble és gran i visc a València o voltants?",
     answerEs:
-      "Para piezas pequeñas o medianas (sillas, butacas, mesillas, espejos o lámparas), puedes traerlas directamente a nuestro taller en Calle Arquitecto Arnau, 61, Bajo (46020 Benimaclet, València) concertando cita en el 670 41 80 08. Para comedores, aparadores, armarios o piezas de gran volumen en Valencia capital y área metropolitana (Alboraia, Godella, Rocafort, Paterna, Burjassot, Torrent...), coordinamos nosotros mismos la recogida y entrega en domicilio.",
+      "Para piezas pequeñas o medianas (sillas, butacas, mesillas o espejos), puedes traerlas directamente a nuestro taller en Calle Arquitecto Arnau, 61, Bajo (46020 Benimaclet, València) concertando cita en el 670 41 80 08. Para comedores, aparadores, armarios o piezas de gran volumen en Valencia capital y área metropolitana (Alboraia, Godella, Rocafort, Paterna, Burjassot, Torrent...), coordinamos nosotros mismos la recogida y entrega en domicilio.",
     answerVa:
       "Per a peces mitjanes pots portar-les al taller al C/ Arquitecte Arnau, 61 (Benimaclet). Per a mobles de gran volum a València i voltants, coordinem la recollida i lliurament a domicili.",
   },

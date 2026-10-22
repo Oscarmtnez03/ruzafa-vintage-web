@@ -91,8 +91,8 @@ export default function CondicionesServicioPage() {
               </li>
               <li>
                 <strong>Aparición de vicios ocultos durante el desmontaje:</strong>{" "}
-                Si durante el desmontaje técnico de una lámpara de araña o
-                mueble se detectaran averías o daños ocultos no apreciables en
+                Si durante el desmontaje técnico de un mueble o estructura de
+                madera se detectaran averías o daños ocultos no apreciables en
                 la inspección inicial, se comunicará inmediatamente al cliente
                 antes de realizar cualquier cargo adicional.
               </li>
@@ -104,12 +104,12 @@ export default function CondicionesServicioPage() {
               3. Régimen de Garantías y Naturaleza de las Piezas Antiguas
             </h2>
             <p>
-              Las intervenciones de restauración, encolado estructural y
-              renovación de componentes eléctricos realizadas por{" "}
+              Las intervenciones de restauración, encolado estructural,
+              ebanistería y tapicería realizadas por{" "}
               {BUSINESS_INFO.name} cuentan con la garantía legal prevista en la
               normativa española de defensa de los consumidores respecto a la
-              mano de obra y los materiales nuevos incorporados (como cableado,
-              portalámparas o herrajes sustituidos).
+              mano de obra y los materiales nuevos incorporados (como espigas,
+              cinchas, herrajes o acabados aplicados).
             </p>
             <p>
               Quedan excluidos de la garantía los desperfectos derivados de un

@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
 
     if (pieceType.length < 2) {
       errors.pieceType =
-        "Selecciona qué tipo de mueble o lámpara deseas valorar.";
+        "Selecciona qué tipo de mueble o encargo deseas valorar.";
     }
 
     if (message.length < 10) {

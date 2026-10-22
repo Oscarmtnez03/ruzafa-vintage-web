@@ -13,7 +13,7 @@ import {
 import { CASE_STUDIES, CaseStudyItem } from "@/data/business";
 import { useLanguage } from "@/context/LanguageContext";
 
-type FilterCategory = "todas" | "lamparas" | "midcentury" | "personalizacion";
+type FilterCategory = "todas" | "ebanisteria" | "mobiliario" | "carcoma" | "tapiceria";
 
 export function WorkshopGallery() {
   const { locale, triggerPrefillAndScroll } = useLanguage();
@@ -28,23 +28,28 @@ export function WorkshopGallery() {
   }[] = [
     {
       id: "todas",
-      labelEs: "Todas las Intervenciones",
-      labelVa: "Totes les Intervencions",
+      labelEs: "Todas las Especialidades",
+      labelVa: "Totes les Especialitats",
     },
     {
-      id: "lamparas",
-      labelEs: "Lámparas de Araña",
-      labelVa: "Llums d'Aranya",
+      id: "ebanisteria",
+      labelEs: "Ebanistería y Sillería",
+      labelVa: "Ebanisteria i Cadirat",
     },
     {
-      id: "midcentury",
-      labelEs: "Mobiliario Años 50–70",
-      labelVa: "Mobiliari Anys 50–70",
+      id: "mobiliario",
+      labelEs: "Cómodas y Aparadores",
+      labelVa: "Còmodes i Aparadors",
     },
     {
-      id: "personalizacion",
-      labelEs: "Reciclaje Creativo",
-      labelVa: "Reciclatge Creatiu",
+      id: "carcoma",
+      labelEs: "Anticarcoma",
+      labelVa: "Anticorc",
+    },
+    {
+      id: "tapiceria",
+      labelEs: "Tapicería y Rejilla",
+      labelVa: "Tapisseria i Reixeta",
     },
   ];
 
@@ -192,7 +197,7 @@ export function WorkshopGallery() {
                 {/* Base Layer: Restored Luminous State */}
                 <Image
                   src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85"
-                  alt="Simulación de acabado restaurado y nutrido en aparador mid-century"
+                  alt="Simulación de acabado restaurado y nutrido en mueble de madera noble"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover saturate-115 contrast-105"

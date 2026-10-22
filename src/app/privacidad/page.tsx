@@ -88,7 +88,8 @@ export default function PrivacidadPage() {
             <ul className="list-disc pl-5 space-y-1.5">
               <li>
                 Responder a las solicitudes de valoración orientativa de
-                restauración de muebles o lámparas de araña.
+                restauración de muebles, ebanistería, tratamientos anticarcoma o
+                tapicería.
               </li>
               <li>
                 Concertar citas previas de atención personalizada en el taller de{" "}

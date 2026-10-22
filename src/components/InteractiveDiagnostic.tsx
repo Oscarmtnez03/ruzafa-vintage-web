@@ -28,137 +28,137 @@ interface OptionItem {
 
 const PIECE_OPTIONS: OptionItem[] = [
   {
-    id: "lampara-arana",
-    labelEs: "Lámpara de araña / Luminaria histórica",
-    labelVa: "Llum d'aranya / Lluminària històrica",
+    id: "comoda-aparador",
+    labelEs: "Cómoda / Aparador / Consola o Armario antiguo",
+    labelVa: "Còmoda / Aparador / Consola o Armari antic",
     protocolEs: [
-      "Desmontaje numerado de brazos, platillos y cadenas de cristal",
-      "Limpieza manual de bronce/latón y baño óptico de prismas y lágrimas",
-      "Sustitución integral del cableado eléctrico y portalámparas homologados",
-      "Reposición de lágrimas o almendras de cristal faltantes con piezas de época",
+      "Decapado artesanal controlado respetando la pátina y chapa original de nogal o caoba",
+      "Eliminación de manchas de humedad, reintegración de faltas de chapa y marquetería",
+      "Ajuste de puertas, cerraduras de época, colas de milano y guías de cajonera",
+      "Barnizado tradicional a muñequilla con goma-laca natural o nutrición a la cera virgen",
     ],
     protocolVa: [
-      "Desmuntatge numerat de braços, platets i cadenes de cristall",
-      "Neteja manual de bronze/llautó i bany òptic de prismes i llàgrimes",
-      "Substitució integral del cablejat elèctric i portalàmpades homologats",
-      "Reposició de llàgrimes o ametles de cristall amb peces d'època",
-    ],
-    durationEs: "Entre 2 y 3 semanas según número de brazos y estado eléctrico",
-    durationVa: "Entre 2 i 3 setmanes segons nombre de braços i estat elèctric",
-    photoTipEs:
-      "Haz una foto general de la lámpara colgada o apoyada, un plano cercano de los portalámparas/cables y otro de las lágrimas de cristal.",
-    photoTipVa:
-      "Fes una foto general del llum, un pla proper dels portalàmpades/cables i un altre de les llàgrimes de cristall.",
-  },
-  {
-    id: "aparador-midcentury",
-    labelEs: "Aparador / Credenza / Mueble Años 50–80",
-    labelVa: "Aparador / Credença / Moble Anys 50–80",
-    protocolEs: [
-      "Decapado controlado respetando la chapa original de teca, nogal o palisandro",
-      "Eliminación química de cercos de humedad y reintegración de faltas de chapa",
-      "Ajuste de puertas correderas, bisagras, colas de milano y guías de cajones",
-      "Nutrición profunda con aceite de teca natural, goma-laca o cera de carnauba",
-    ],
-    protocolVa: [
-      "Decapat controlat respectant la xapa original de teca, noguera o palissandre",
-      "Eliminació de taques d'humitat i reintegració de faltes de xapa",
-      "Ajust de portes corredisses, frontisses i guies de calaixos",
-      "Nutrició profunda amb oli de teca natural, goma-laca o cera",
+      "Decapat artesanal controlat respectant la pàtina i xapa original de noguera o caoba",
+      "Eliminació de taques d'humitat i reintegració de faltes de xapa i marqueteria",
+      "Ajust de portes, panys d'època, cues d'oronella i guies de calaixera",
+      "Envernissat tradicional a monyeca amb goma-laca natural o nutrició a la cera verge",
     ],
     durationEs:
-      "Entre 3 y 4 semanas en taller (respetando tiempos de secado y nutrición)",
-    durationVa: "Entre 3 i 4 setmanes al taller (respectant temps d'assecat)",
+      "Entre 3 y 4 semanas en taller (respetando tiempos naturales de secado y nutrición)",
+    durationVa: "Entre 3 i 4 setmanes al taller (respectant temps naturals d'assecat)",
     photoTipEs:
-      "Toma una foto frontal completa, una del sobre superior (donde suele haber marcas de uso) y un detalle del interior o cantos.",
+      "Toma una foto frontal completa, una del sobre superior y un detalle de los cajones, herrajes o desperfectos.",
     photoTipVa:
-      "Fes una foto frontal completa, una del sobre superior i un detall de l'interior o cants.",
+      "Fes una foto frontal completa, una del sobre superior i un detall dels calaixos o desperfectes.",
   },
   {
-    id: "silleria-mesa",
-    labelEs: "Butaca / Sillería / Mesa o Escritorio de madera",
-    labelVa: "Butaca / Cadirat / Taula o Escriptori de fusta",
+    id: "silleria-ebanisteria",
+    labelEs: "Sillería / Sillón histórico / Mesa de comedor o Escritorio",
+    labelVa: "Cadirat / Silló històric / Taula de menjador o Escriptori",
     protocolEs: [
-      "Desmontaje y consolidación de espigas y ensambles con holgura estructural",
-      "Tratamiento preventivo-curativo antixilófagos si presenta marcas antiguas",
-      "Limpieza y regeneración del acabado en brazos, patas y tableros",
-      "Acabado sedoso tradicional a muñequilla o protección mate natural",
+      "Desmontaje numerado y reencolado de espigas y cajas con holgura estructural",
+      "Reconstrucción de piezas torneadas, patas o tallas fracturadas en madera maciza",
+      "Limpieza y regeneración del barniz en brazos, respaldos y tableros de mesa",
+      "Acabado sedoso tradicional a muñequilla con goma-laca o ceras de ebanista",
     ],
     protocolVa: [
-      "Desmuntatge i consolidació d'espigues i ensambles amb folgança",
-      "Tractament preventiu-curatiu antixilòfags si cal",
-      "Neteja i regeneració de l'acabat en braços, potes i taulers",
-      "Acabat sedós tradicional a monyeca o protecció mat natural",
+      "Desmuntatge numerat i reencolat d'espigues i caixes amb folgança estructural",
+      "Reconstrucció de peces tornejades, potes o talles fracturades en fusta massissa",
+      "Neteja i regeneració del vernís en braços, respatlers i taulers",
+      "Acabat sedós tradicional a monyeca amb goma-laca o ceres d'ebanista",
     ],
-    durationEs: "Entre 2 y 3 semanas según número de piezas y estado de los ensambles",
-    durationVa: "Entre 2 i 3 setmanes segons nombre de peces i estat dels ensambles",
+    durationEs: "Entre 2 y 3 semanas según número de sillas y estado de los ensambles",
+    durationVa: "Entre 2 i 3 setmanes segons nombre de cadires i estat dels ensambles",
     photoTipEs:
-      "Envía una foto de perfil y frente, e indícanos si alguna pata o brazo tiene movimiento o desencolado.",
+      "Envía una foto de perfil y frente, e indícanos si alguna pata, brazo o travesaño tiene movimiento o desencolado.",
     photoTipVa:
       "Envia una foto de perfil i front, i indica'ns si alguna pota o braç té moviment.",
   },
   {
-    id: "personalizacion",
-    labelEs: "Personalización cromática y reciclaje creativo",
-    labelVa: "Personalització cromàtica i reciclatge creatiu",
+    id: "tratamiento-carcoma",
+    labelEs: "Tratamiento contra Carcoma / Termita y Sanidad de la Madera",
+    labelVa: "Tractament contra Corc / Termita i Sanitat de la Fusta",
     protocolEs: [
-      "Estudio cromático acorde a la luz e interiorismo de tu vivienda en Valencia",
-      "Preparación del soporte, decapado parcial para combinar madera vista y color",
-      "Aplicación artesanal de pátinas minerales, veladuras o lacado satinado",
-      "Limpieza y recuperación de bocallaves, tiradores de latón y cristales",
+      "Inspección técnica para determinar si el ataque de xilófagos está activo o latente",
+      "Fumigación curativa profunda por inyección e impregnación en cámara controlada",
+      "Consolidación interna de galerías debilitadas mediante resinas reversibles",
+      "Sellado invisible de los orificios de salida con ceras de ebanista pigmentadas al tono",
     ],
     protocolVa: [
-      "Estudi cromàtic d'acord amb la llum i interiorisme del teu habitatge",
-      "Preparació del suport i combinació de fusta vista i color",
-      "Aplicació artesanal de pàtines minerals, veladures o lacat setinat",
-      "Neteja i recuperació de tiradors de llautó i cristalls",
+      "Inspecció tècnica per determinar si l'atac de xilòfags està actiu o latent",
+      "Fumigació curativa profunda per injecció i impregnació controlada",
+      "Consolidació interna de galeries debilitades mitjançant resines",
+      "Segellat invisible dels orificis d'eixida amb ceres d'ebanista al to",
     ],
-    durationEs: "Entre 2 y 3 semanas incluyendo pruebas de tono con el cliente",
-    durationVa: "Entre 2 i 3 setmanes incloent proves de to amb el client",
+    durationEs: "Entre 2 y 3 semanas incluyendo el ciclo completo de cuarentena y sellado",
+    durationVa: "Entre 2 i 3 setmanes incloent el cicle complet de quarantena i segellat",
     photoTipEs:
-      "Fotografía el mueble actual y, si quieres, la estancia donde irá ubicado para asesorarte con el acabado ideal.",
+      "Haz una foto general del mueble y otra de cerca donde se aprecien los pequeños orificios o el serrín.",
     photoTipVa:
-      "Fotografia el moble actual i l'estança on anirà ubicat per assessorar-te amb l'acabat.",
+      "Fes una foto general del moble i una altra de prop on s'aprecien els orificis o les serradures.",
   },
   {
-    id: "sourcing-encargo",
-    labelEs: "Búsqueda de pieza singular por encargo (Sourcing)",
-    labelVa: "Recerca de peça singular per encàrrec (Sourcing)",
+    id: "tapiceria-rejilla",
+    labelEs: "Tapicería tradicional, butacas o tejido de rejilla (Cannage)",
+    labelVa: "Tapisseria tradicional, butaques o teixit de reixeta (Cannage)",
     protocolEs: [
-      "Definición de medidas máximas, década buscada (años 50, 60, 70 u 80) y tipología",
-      "Muestra de piezas disponibles en el taller de C/ Arquitecto Arnau, 61 o búsqueda activa",
-      "Restauración y puesta a punto completa antes de la entrega en tu domicilio o estudio",
-      "Posibilidad de personalizar el acabado final o electrificación a medida",
+      "Revisión y encolado previo del bastidor de madera antes de tapizar",
+      "Sustitución de cinchas de yute, atado manual de muelles o renovación de relleno",
+      "Tejido artesanal hebra a hebra de rejilla vegetal (cannage) en asientos y respaldos",
+      "Confección y remate con tachuela vista envejecida, vivo doble o pasamanería",
     ],
     protocolVa: [
-      "Definició de mides màximes, dècada buscada (anys 50 a 80) i tipologia",
-      "Mostra de peces disponibles al taller del C/ Arquitecte Arnau, 61 o recerca activa",
-      "Restauració i posada a punt completa abans del lliurament",
-      "Possibilitat de personalitzar l'acabat final a mida",
+      "Revisió i encolat previ del bastidor de fusta abans de tapissar",
+      "Substitució de cingles de jute, lligat manual de molles o renovació de farciment",
+      "Teixit artesanal de reixeta vegetal (cannage) en seients i respatlers",
+      "Confecció i rematada amb tatxola vista, viu doble o passamaneria",
     ],
-    durationEs: "Cita en taller en 24–48 h laborables para ver piezas o definir búsqueda",
-    durationVa: "Cita al taller en 24–48 h laborables per veure peces o definir recerca",
+    durationEs: "Entre 2 y 3 semanas según tejido o complejidad del cosido/rejilla",
+    durationVa: "Entre 2 i 3 setmanes segons teixit o complexitat de la reixeta",
     photoTipEs:
-      "Indícanos las medidas del espacio disponible y qué estilo o época estás buscando.",
+      "Fotografía la silla o butaca completa y un plano del asiento/respaldo actual.",
     photoTipVa:
-      "Indica'ns les mides de l'espai disponible i quin estil o època estàs buscant.",
+      "Fotografia la cadira o butaca completa i un pla del seient o respatler actual.",
+  },
+  {
+    id: "ebanisteria-medida",
+    labelEs: "Encargo de ebanistería a medida, talla o pieza especial",
+    labelVa: "Encàrrec d'ebanisteria a mida, talla o peça especial",
+    protocolEs: [
+      "Toma de medidas, diseño previo y selección de maderas nobles macizas (nogal, roble, haya, caoba)",
+      "Construcción artesanal con ensambles tradicionales de ebanistería y talla manual",
+      "Pruebas de tono y acabado en el taller de C/ Arquitecto Arnau, 61 (Benimaclet)",
+      "Entrega e instalación cuidadosa en domicilio, despacho o institución en Valencia",
+    ],
+    protocolVa: [
+      "Presa de mides, disseny previ i selecció de fustes nobles massisses",
+      "Construcció artesanal amb ensambles tradicionals d'ebanisteria i talla manual",
+      "Proves de to i acabat al taller del C/ Arquitecte Arnau, 61 (Benimaclet)",
+      "Lliurament i instal·lació acurada en domicili o despatx a València",
+    ],
+    durationEs: "Cita en taller en 24–48 h laborables para definir diseño, maderas y plazos",
+    durationVa: "Cita al taller en 24–48 h laborables per definir disseny, fustes i terminis",
+    photoTipEs:
+      "Indícanos las medidas aproximadas, la madera deseada o adjunta una foto de referencia.",
+    photoTipVa:
+      "Indica'ns les mides aproximades, la fusta desitjada o adjunta una foto de referència.",
   },
 ];
 
 const MATERIAL_OPTIONS = [
-  "Bronce / Latón y Cristal tallado",
-  "Madera de Teca / Nogal / Palisandro (Años 50–70)",
-  "Madera maciza tradicional (Roble, Haya, Caoba)",
-  "Metal cromado / Opalina / Cristal Murano (Años 60–80)",
-  "No estoy seguro/a — prefiero valoración técnica",
+  "Madera maciza de Nogal / Caoba / Roble / Haya",
+  "Mueble con Chapa de madera noble o Marquetería",
+  "Sillería con Tapizado clásico o Rejilla vegetal (Cannage)",
+  "Madera tallada / Marco dorado / Pieza de época",
+  "No estoy seguro/a — prefiero valoración técnica de Carlos Soriano",
 ];
 
 const CONDITION_OPTIONS = [
-  "Buen estado estructural · Necesita limpieza, nutrición o puesta a punto",
-  "Necesita recableado eléctrico seguro y/o reposición de cristales",
-  "Presenta manchas de humedad, barniz deteriorado o desencolados",
-  "Quiero actualizar su estética / color conservando su esencia",
-  "Busco adquirir una pieza ya restaurada del taller",
+  "Presenta agujeros o serrín de carcoma (necesita fumigación y consolidación)",
+  "Tiene holgura estructural, patas desencoladas o piezas rotas",
+  "El barniz está desgastado, oscurecido o tiene manchas de humedad",
+  "Necesita retapizado artesanal o reposición de rejilla rota",
+  "Quiero un encargo de ebanistería a medida o restauración completa",
 ];
 
 const LOGISTICS_OPTIONS = [
@@ -250,8 +250,8 @@ Me gustaría enviarte unas fotos para valorarlo.`;
           </h2>
           <p className="text-base sm:text-lg text-[#C2B9AC] mt-4 leading-relaxed">
             {locale === "es"
-              ? "Cada lámpara de araña o mueble de los años 50–80 tiene una estructura y patología propias. Selecciona las características de tu pieza para conocer las fases de trabajo y trasladar los datos directamente a tu solicitud o WhatsApp."
-              : "Selecciona les característiques de la teua peça per conéixer les fases de treball i traslladar les dades directament a la teua sol·licitud o WhatsApp."}
+              ? "Cada mueble antiguo, sillería de nogal o pieza de ebanistería tiene una estructura y patología propias. Selecciona las características de tu mueble para conocer las fases de trabajo y trasladar los datos directamente a tu solicitud o WhatsApp."
+              : "Selecciona les característiques del teu moble per conéixer les fases de treball i traslladar les dades directament a la teua sol·licitud o WhatsApp."}
           </p>
         </motion.div>
 

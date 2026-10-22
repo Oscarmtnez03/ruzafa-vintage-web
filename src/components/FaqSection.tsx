@@ -37,8 +37,8 @@ export function FaqSection() {
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl text-[#1A1412] leading-[1.08] tracking-tight">
             {locale === "es"
-              ? "Dudas habituales antes de traer tu lámpara o mueble al taller."
-              : "Dubtes habituals abans de portar el teu llum o moble al taller."}
+              ? "Dudas habituales antes de traer tu mueble al taller."
+              : "Dubtes habituals abans de portar el teu moble al taller."}
           </h2>
         </motion.div>
 
