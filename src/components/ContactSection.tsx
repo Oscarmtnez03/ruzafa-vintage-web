@@ -129,6 +129,12 @@ function ContactFormInner({
           ? "Introduce un correo electrónico válido."
           : "Introdueix un correu electrònic vàlid.";
     }
+    if (pieceType.trim().length < 2) {
+      errs.pieceType =
+        locale === "es"
+          ? "Indica el tipo de mueble o lámpara a valorar."
+          : "Indica el tipus de moble o llum a valorar.";
+    }
     if (message.trim().length < 10) {
       errs.message =
         locale === "es"
@@ -513,8 +519,15 @@ function ContactFormInner({
             required
             value={pieceType}
             onChange={(e) => setPieceType(e.target.value)}
+            aria-invalid={Boolean(fieldErrors.pieceType)}
+            aria-describedby={fieldErrors.pieceType ? "err-piecetype" : undefined}
             className="w-full min-h-12 px-4 py-2.5 rounded-2xl bg-black/40 border border-white/15 text-[#FAF7F2] text-sm focus:border-[#D4A359] focus:outline-none transition-colors"
           />
+          {fieldErrors.pieceType && (
+            <p id="err-piecetype" className="text-xs text-[#F87171] mt-1">
+              {fieldErrors.pieceType}
+            </p>
+          )}
         </div>
 
         <div>
@@ -534,11 +547,17 @@ function ContactFormInner({
             className="w-full min-h-12 px-4 py-2.5 rounded-2xl bg-[#181512] border border-white/15 text-[#FAF7F2] text-sm focus:border-[#D4A359] focus:outline-none"
           >
             <option value="WhatsApp (para adjuntar fotografías)">
-              WhatsApp (para adjuntar fotografías)
+              {locale === "es"
+                ? "WhatsApp (para adjuntar fotografías)"
+                : "WhatsApp (per adjuntar fotografies)"}
             </option>
-            <option value="Llamada telefónica">Llamada telefónica</option>
+            <option value="Llamada telefónica">
+              {locale === "es" ? "Llamada telefónica" : "Telefonada"}
+            </option>
             <option value="Cita presencial en C/ Puerto Rico, 33">
-              Cita presencial en C/ Puerto Rico, 33
+              {locale === "es"
+                ? "Cita presencial en C/ Puerto Rico, 33"
+                : "Cita presencial al C/ Puerto Rico, 33"}
             </option>
           </select>
         </div>
@@ -557,14 +576,24 @@ function ContactFormInner({
 
         {/* Quick Technical Symptom Chips */}
         <div className="flex flex-wrap gap-1.5 mb-2.5">
-          {[
-            "Faltan lágrimas de cristal",
-            "Recableado eléctrico seguro",
-            "Manchas o cercos de humedad",
-            "Barniz amarilleado / desgastado",
-            "Holgura en patas o cajones",
-            "Proyecto de interiorismo (B2B)",
-          ].map((symptom) => (
+          {(locale === "es"
+            ? [
+                "Faltan lágrimas de cristal",
+                "Recableado eléctrico seguro",
+                "Manchas o cercos de humedad",
+                "Barniz amarilleado / desgastado",
+                "Holgura en patas o cajones",
+                "Proyecto de interiorismo (B2B)",
+              ]
+            : [
+                "Falten llàgrimes de cristall",
+                "Recablejat elèctric segur",
+                "Taques o cèrcols d'humitat",
+                "Vernís esgrogueït / desgastat",
+                "Joc en potes o calaixos",
+                "Projecte d'interiorisme (B2B)",
+              ]
+          ).map((symptom) => (
             <button
               key={symptom}
               type="button"
@@ -758,45 +787,89 @@ function ContactFormInner({
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
           <p>
-            <strong className="text-[#EDE6DA]">Responsable:</strong>{" "}
+            <strong className="text-[#EDE6DA]">
+              {locale === "es" ? "Responsable:" : "Responsable:"}
+            </strong>{" "}
             {BUSINESS_INFO.founder} ({BUSINESS_INFO.name})
           </p>
           <p>
-            <strong className="text-[#EDE6DA]">Finalidad:</strong> Atender tu
-            solicitud de valoración técnica, presupuesto o cita previa.
+            <strong className="text-[#EDE6DA]">
+              {locale === "es" ? "Finalidad:" : "Finalitat:"}
+            </strong>{" "}
+            {locale === "es"
+              ? "Atender tu solicitud de valoración técnica, presupuesto o cita previa."
+              : "Atendre la teua sol·licitud de valoració tècnica, pressupost o cita prèvia."}
           </p>
           <p>
-            <strong className="text-[#EDE6DA]">Legitimación:</strong>{" "}
-            Consentimiento del interesado (art. 6.1.a RGPD) y medidas
-            precontractuales (art. 6.1.b RGPD).
+            <strong className="text-[#EDE6DA]">
+              {locale === "es" ? "Legitimación:" : "Legitimació:"}
+            </strong>{" "}
+            {locale === "es"
+              ? "Consentimiento del interesado (art. 6.1.a RGPD) y medidas precontractuales (art. 6.1.b RGPD)."
+              : "Consentiment de l'interessat (art. 6.1.a RGPD) i mesures precontractuals (art. 6.1.b RGPD)."}
           </p>
           <p>
-            <strong className="text-[#EDE6DA]">Destinatarios:</strong> No se
-            cederán datos a terceros salvo obligación legal.
+            <strong className="text-[#EDE6DA]">
+              {locale === "es" ? "Destinatarios:" : "Destinataris:"}
+            </strong>{" "}
+            {locale === "es"
+              ? "No se cederán datos a terceros salvo obligación legal."
+              : "No es cediran dades a tercers excepte obligació legal."}
           </p>
         </div>
         <p>
-          <strong className="text-[#EDE6DA]">Derechos e info adicional:</strong>{" "}
-          Puedes ejercer tus derechos de acceso, rectificación, supresión,
-          oposición, limitación y portabilidad escribiendo a{" "}
-          <span className="font-mono text-[#EDE6DA]">
-            {BUSINESS_INFO.email}
-          </span>
-          . Consulta la segunda capa detallada en nuestra{" "}
-          <Link
-            href="/privacidad"
-            className="underline text-[#D4A359] hover:text-white"
-          >
-            Política de Privacidad
-          </Link>{" "}
-          y las{" "}
-          <Link
-            href="/condiciones-servicio"
-            className="underline text-[#D4A359] hover:text-white"
-          >
-            Condiciones de Servicio y Garantías
-          </Link>
-          .
+          <strong className="text-[#EDE6DA]">
+            {locale === "es"
+              ? "Derechos e info adicional:"
+              : "Drets i informació addicional:"}
+          </strong>{" "}
+          {locale === "es" ? (
+            <>
+              Puedes ejercer tus derechos de acceso, rectificación, supresión,
+              oposición, limitación y portabilidad escribiendo a{" "}
+              <span className="font-mono text-[#EDE6DA]">
+                {BUSINESS_INFO.email}
+              </span>
+              . Consulta la segunda capa detallada en nuestra{" "}
+              <Link
+                href="/privacidad"
+                className="underline text-[#D4A359] hover:text-white"
+              >
+                Política de Privacidad
+              </Link>{" "}
+              y las{" "}
+              <Link
+                href="/condiciones-servicio"
+                className="underline text-[#D4A359] hover:text-white"
+              >
+                Condiciones de Servicio y Garantías
+              </Link>
+              .
+            </>
+          ) : (
+            <>
+              Pots exercir els teus drets d&apos;accés, rectificació, supressió,
+              oposició, limitació i portabilitat escrivint a{" "}
+              <span className="font-mono text-[#EDE6DA]">
+                {BUSINESS_INFO.email}
+              </span>
+              . Consulta la segona capa detallada en la nostra{" "}
+              <Link
+                href="/privacidad"
+                className="underline text-[#D4A359] hover:text-white"
+              >
+                Política de Privacitat
+              </Link>{" "}
+              i les{" "}
+              <Link
+                href="/condiciones-servicio"
+                className="underline text-[#D4A359] hover:text-white"
+              >
+                Condicions de Servei i Garanties
+              </Link>
+              .
+            </>
+          )}
         </p>
       </div>
     </form>

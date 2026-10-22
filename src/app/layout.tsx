@@ -6,7 +6,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
-import { BUSINESS_INFO } from "@/data/business";
+import { BUSINESS_INFO, FAQS } from "@/data/business";
 import { CookieConsent } from "@/components/CookieConsent";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
@@ -76,52 +76,68 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "@id": "https://ruzafavintage.es/#localbusiness",
-    name: BUSINESS_INFO.name,
-    description:
-      "Taller artesanal especializado en restauración de mobiliario de las décadas de 1950 a 1980, recuperación y electrificación de lámparas de araña clásicas y personalización de piezas en el barrio de Ruzafa, Valencia.",
-    url: "https://ruzafavintage.es",
-    telephone: BUSINESS_INFO.phoneE164,
-    email: BUSINESS_INFO.email,
-    founder: {
-      "@type": "Person",
-      name: BUSINESS_INFO.founder,
-      jobTitle: BUSINESS_INFO.role,
-    },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: BUSINESS_INFO.streetAddress,
-      addressLocality: BUSINESS_INFO.city,
-      addressRegion: BUSINESS_INFO.province,
-      postalCode: BUSINESS_INFO.postalCode,
-      addressCountry: BUSINESS_INFO.country,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: BUSINESS_INFO.coordinates.lat,
-      longitude: BUSINESS_INFO.coordinates.lng,
-    },
-    areaServed: [
-      { "@type": "City", name: "València" },
-      { "@type": "Place", name: "Ruzafa (Russafa)" },
-      { "@type": "Place", name: "L'Eixample, València" },
-      { "@type": "Place", name: "Ciutat Vella, València" },
-      { "@type": "City", name: "Alboraia" },
-      { "@type": "City", name: "Paterna" },
-    ],
-    openingHoursSpecification: [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "10:00",
-        closes: "14:00",
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://ruzafavintage.es/#localbusiness",
+        name: BUSINESS_INFO.name,
+        description:
+          "Taller artesanal especializado en restauración de mobiliario de las décadas de 1950 a 1980, recuperación y electrificación de lámparas de araña clásicas y personalización de piezas en el barrio de Ruzafa, Valencia.",
+        url: "https://ruzafavintage.es",
+        telephone: BUSINESS_INFO.phoneE164,
+        email: BUSINESS_INFO.email,
+        founder: {
+          "@type": "Person",
+          name: BUSINESS_INFO.founder,
+          jobTitle: BUSINESS_INFO.role,
+        },
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: BUSINESS_INFO.streetAddress,
+          addressLocality: BUSINESS_INFO.city,
+          addressRegion: BUSINESS_INFO.province,
+          postalCode: BUSINESS_INFO.postalCode,
+          addressCountry: BUSINESS_INFO.country,
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: BUSINESS_INFO.coordinates.lat,
+          longitude: BUSINESS_INFO.coordinates.lng,
+        },
+        areaServed: [
+          { "@type": "City", name: "València" },
+          { "@type": "Place", name: "Ruzafa (Russafa)" },
+          { "@type": "Place", name: "L'Eixample, València" },
+          { "@type": "Place", name: "Ciutat Vella, València" },
+          { "@type": "City", name: "Alboraia" },
+          { "@type": "City", name: "Paterna" },
+        ],
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "10:00",
+            closes: "14:00",
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "17:00",
+            closes: "20:00",
+          },
+        ],
       },
       {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "17:00",
-        closes: "20:00",
+        "@type": "FAQPage",
+        "@id": "https://ruzafavintage.es/#faq",
+        mainEntity: FAQS.map((faq) => ({
+          "@type": "Question",
+          name: faq.questionEs,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answerEs,
+          },
+        })),
       },
     ],
   };

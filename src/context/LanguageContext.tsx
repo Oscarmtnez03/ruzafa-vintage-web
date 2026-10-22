@@ -5,6 +5,7 @@ import React, {
   useContext,
   useState,
   useCallback,
+  useEffect,
   useSyncExternalStore,
 } from "react";
 import { Locale } from "@/data/business";
@@ -21,6 +22,7 @@ export interface DiagnosticPrefill {
 export type CookieConsentMode = "unset" | "essential_only" | "all_accepted";
 
 const COOKIE_STORAGE_KEY = "ruzafa_vintage_cookie_consent_v2";
+const LOCALE_STORAGE_KEY = "ruzafa_locale_v1";
 
 function subscribeToCookieStorage(callback: () => void) {
   window.addEventListener("storage", callback);
@@ -69,9 +71,37 @@ const LanguageContext = createContext<LanguageContextValue | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("es");
+  const [locale, setLocaleState] = useState<Locale>("es");
   const [prefill, setPrefill] = useState<DiagnosticPrefill>({ version: 0 });
   const [isCookieSettingsOpen, setIsCookieSettingsOpen] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(LOCALE_STORAGE_KEY);
+      if (saved === "es" || saved === "va") {
+        queueMicrotask(() => {
+          setLocaleState(saved);
+        });
+        document.documentElement.lang = saved === "va" ? "ca-valencia" : "es";
+      } else {
+        document.documentElement.lang = "es";
+      }
+    } catch {
+      // ignore storage access errors
+    }
+  }, []);
+
+  const setLocale = useCallback((newLocale: Locale) => {
+    setLocaleState(newLocale);
+    try {
+      window.localStorage.setItem(LOCALE_STORAGE_KEY, newLocale);
+    } catch {
+      // ignore storage errors
+    }
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = newLocale === "va" ? "ca-valencia" : "es";
+    }
+  }, []);
 
   const cookieConsent = useSyncExternalStore(
     subscribeToCookieStorage,

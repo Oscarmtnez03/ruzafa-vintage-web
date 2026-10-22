@@ -276,7 +276,7 @@ export function Navbar() {
                     className="min-h-12 inline-flex items-center justify-center gap-2 px-3 py-3 text-xs font-medium rounded-2xl bg-white ring-1 ring-[#1A1412]/10 text-[#1A1412]"
                   >
                     <Phone className="w-4 h-4 text-[#A65E2E]" aria-hidden="true" />
-                    <span>Llamar</span>
+                    <span>{locale === "es" ? "Llamar" : "Telefonar"}</span>
                   </a>
                   <a
                     href={whatsappUrl}

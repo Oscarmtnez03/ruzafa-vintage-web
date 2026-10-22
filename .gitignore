@@ -20,6 +20,10 @@
 # production
 /build
 
+# customer data / leads (RGPD privacy)
+/data/
+data/
+
 # misc
 .DS_Store
 *.pem
@@ -36,6 +40,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+.agents/
 
 # typescript
 *.tsbuildinfo
